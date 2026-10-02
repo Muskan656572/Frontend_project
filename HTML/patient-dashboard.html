@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Patient Dashboard | CarePlus</title>
+
+    <link rel="stylesheet" href="../CSS/patient-dashboard.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+
+        <!-- ================= SIDEBAR ================= -->
+
+        <aside class="sidebar">
+
+            <div class="logo">
+                <h2>CarePlus</h2>
+            </div>
+
+
+            <div class="profile-mini">
+
+                <div class="profile-icon">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+
+                <h3>Aarav Sharma</h3>
+
+                <p>Patient</p>
+
+            </div>
+
+
+            <nav class="sidebar-nav">
+
+                <a href="./patient-dashboard.html" class="active">
+                    <i class="fa-solid fa-house"></i>
+                    Dashboard
+                </a>
+
+                <a href="./patient-dashboard.html">
+                    <i class="fa-solid fa-user"></i>
+                    My Profile
+                </a>
+
+                <a href="./patient-appointments.html">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    Appointments
+                </a>
+
+                <a href="doctors.html">
+                    <i class="fa-solid fa-user-doctor"></i>
+                    Find Doctors
+                </a>
+
+                <a href="medical-history.html">
+                    <i class="fa-solid fa-file-medical"></i>
+                    Medical History
+                </a>
+
+
+
+            </nav>
+
+
+            <a href="home.html" class="logout">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                Logout
+            </a>
+
+        </aside>
+
+
+
+        <!-- ================= MAIN CONTENT ================= -->
+
+        <main class="main-content">
+
+
+            <!-- Top Bar -->
+
+            <div class="topbar">
+
+                <div>
+                    <p class="small-text">PATIENT DASHBOARD</p>
+
+                    <h1>Good Morning, Aarav 👋</h1>
+
+                    <p class="welcome-text">
+                        Welcome back! Here's your health overview.
+                    </p>
+                </div>
+
+
+                <div class="top-profile">
+
+                    <i class="fa-solid fa-bell"></i>
+
+                    <div class="top-user">
+
+                        <div class="user-icon">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+
+                        <span>Aarav</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= STAT CARDS ================= -->
+
+            <section class="stats">
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        <i class="fa-solid fa-calendar-check"></i>
+                    </div>
+
+                    <div>
+                        <p>Upcoming Appointments</p>
+                        <h2>2</h2>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        <i class="fa-solid fa-user-doctor"></i>
+                    </div>
+
+                    <div>
+                        <p>Doctors Visited</p>
+                        <h2>5</h2>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        <i class="fa-solid fa-file-medical"></i>
+                    </div>
+
+                    <div>
+                        <p>Medical Records</p>
+                        <h2>8</h2>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+
+                    <div>
+                        <p>Health Score</p>
+                        <h2>92%</h2>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ================= CONTENT GRID ================= -->
+
+            <section class="content-grid">
+
+
+                <!-- Upcoming Appointment -->
+
+                <div class="dashboard-card appointment-card">
+
+                    <div class="card-heading">
+
+                        <h2>Upcoming Appointment</h2>
+
+                        <a href="#">View All</a>
+
+                    </div>
+
+
+                    <div class="doctor-appointment">
+
+                        <img src="../images/doctors2.jpg"
+                            alt="Doctor">
+
+                        <div class="appointment-info">
+
+                            <h3>Dr. Priya Sharma</h3>
+
+                            <p>Cardiologist</p>
+
+                            <div class="appointment-details">
+
+                                <span>
+                                    <i class="fa-solid fa-calendar"></i>
+                                    20 September
+                                </span>
+
+                                <span>
+                                    <i class="fa-solid fa-clock"></i>
+                                    10:00 AM
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <span class="status">
+                            Confirmed
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Quick Actions -->
+
+                <div class="dashboard-card">
+
+                    <div class="card-heading">
+
+                        <h2>Quick Actions</h2>
+
+                    </div>
+
+
+                    <div class="quick-actions">
+
+                        <a href="doctors.html">
+
+                            <i class="fa-solid fa-user-doctor"></i>
+
+                            <span>Find Doctor</span>
+
+                        </a>
+
+
+                        <a href="appointment.html">
+
+                            <i class="fa-solid fa-calendar-plus"></i>
+
+                            <span>Book Appointment</span>
+
+                        </a>
+
+
+                        <a href="#">
+
+                            <i class="fa-solid fa-file-medical"></i>
+
+                            <span>Medical Records</span>
+
+                        </a>
+
+
+                        <a href="#">
+
+                            <i class="fa-solid fa-message"></i>
+
+                            <span>Messages</span>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ================= RECENT APPOINTMENTS ================= -->
+
+            <section class="dashboard-card recent">
+
+                <div class="card-heading">
+
+                    <h2>Recent Appointments</h2>
+
+                    <a href="#">View All</a>
+
+                </div>
+
+
+                <div class="appointment-table">
+
+                    <div class="table-head">
+
+                        <span>Doctor</span>
+                        <span>Speciality</span>
+                        <span>Date</span>
+                        <span>Status</span>
+
+                    </div>
+
+
+                    <div class="table-row">
+
+                        <span>Dr. Sarah Sharma</span>
+                        <span>Cardiology</span>
+                        <span>10 Sept 2026</span>
+
+                        <span class="completed">
+                            Completed
+                        </span>
+
+                    </div>
+
+
+                    <div class="table-row">
+
+                        <span>Dr. Rahul Mehta</span>
+                        <span>Neurology</span>
+                        <span>05 Sept 2026</span>
+
+                        <span class="completed">
+                            Completed
+                        </span>
+
+                    </div>
+
+
+                    <div class="table-row">
+
+                        <span>Dr. Priya Singh</span>
+                        <span>Pediatrics</span>
+                        <span>28 Aug 2026</span>
+
+                        <span class="completed">
+                            Completed
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ================= HEALTH INFORMATION ================= -->
+
+            <section class="health-section">
+
+
+                <div class="dashboard-card">
+
+                    <div class="card-heading">
+
+                        <h2>Medical History</h2>
+
+                        <a href="#">View All</a>
+
+                    </div>
+
+
+                    <div class="history-item">
+
+                        <div class="history-icon">
+                            <i class="fa-solid fa-heart-pulse"></i>
+                        </div>
+
+                        <div>
+
+                            <h3>Heart Checkup</h3>
+
+                            <p>10 September 2026</p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="history-item">
+
+                        <div class="history-icon">
+                            <i class="fa-solid fa-stethoscope"></i>
+                        </div>
+
+                        <div>
+
+                            <h3>General Checkup</h3>
+
+                            <p>05 September 2026</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="dashboard-card health-tip">
+
+                    <div class="tip-icon">
+
+                        <i class="fa-solid fa-heart"></i>
+
+                    </div>
+
+                    <h2>Health Tip</h2>
+
+                    <p>
+                        Drink enough water, eat healthy food and
+                        stay physically active for better health.
+                    </p>
+
+                    <a href="#">
+                        Learn More →
+                    </a>
+
+                </div>
+
+            </section>
+
+
+        </main>
+
+    </div>
+
+</body>
+</html>

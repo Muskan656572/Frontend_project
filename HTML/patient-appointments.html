@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Appointments - CarePlus</title>
+
+    <link rel="stylesheet" href="../CSS/patient-appointments.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <i class="fa-solid fa-heart-pulse"></i>
+            <span>CarePlus</span>
+        </div>
+
+        <div class="profile">
+            <div class="profile-icon">
+                <i class="fa-solid fa-user"></i>
+            </div>
+
+            <h3>Aarav Sharma</h3>
+            <p>Patient</p>
+        </div>
+
+        <nav>
+
+            <a href="patient-dashboard.html">
+                <i class="fa-solid fa-house"></i>
+                Dashboard
+            </a>
+
+            <a href="patient-dashboard.html">
+                <i class="fa-solid fa-user"></i>
+                My Profile
+            </a>
+
+            <a href="patient-appointments.html" class="active">
+                <i class="fa-solid fa-calendar-check"></i>
+                Appointments
+            </a>
+
+            <a href="doctors.html">
+                <i class="fa-solid fa-user-doctor"></i>
+                Find Doctors
+            </a>
+
+            <a href="medical-history.html">
+                <i class="fa-solid fa-file-medical"></i>
+                Medical History
+            </a>
+
+
+        </nav>
+
+        <a href="#" class="logout">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            Logout
+        </a>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+
+    <main class="main">
+
+        <div class="top">
+
+            <div>
+                <p>MY APPOINTMENTS</p>
+                <h1>Appointments</h1>
+            </div>
+
+            <a href="doctors.html" class="book-btn">
+                <i class="fa-solid fa-plus"></i>
+                Book Appointment
+            </a>
+
+        </div>
+
+
+        <!-- UPCOMING -->
+
+        <section class="appointment-section">
+
+            <h2>Upcoming Appointments</h2>
+
+            <div class="appointment-card">
+
+                <div class="doctor">
+
+                    <div class="doctor-img">
+                        <img src="../images/doctors2.jpg" alt="Doctor">
+                    </div>
+
+                    <div>
+                        <h3>Dr. Neha Sharma</h3>
+                        <p>Cardiologist</p>
+
+                        <span>
+                            <i class="fa-solid fa-location-dot"></i>
+                            City Care Hospital
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <div class="appointment-info">
+
+                    <div>
+                        <i class="fa-solid fa-calendar"></i>
+                        <div>
+                            <small>Date</small>
+                            <p>20 September 2026</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-clock"></i>
+                        <div>
+                            <small>Time</small>
+                            <p>10:00 AM</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="status">
+                    <span>Confirmed</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PAST APPOINTMENTS -->
+
+        <section class="appointment-section">
+
+            <h2>Past Appointments</h2>
+
+            <div class="past-card">
+
+                <div class="doctor">
+
+                    <div class="doctor-img">
+                        <img src="../images/doctors3.jpg" alt="Doctor">
+                    </div>
+
+                    <div>
+                        <h3>Dr. Rahul Mehta</h3>
+                        <p>Neurologist</p>
+                        <span>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Apollo Hospital
+                        </span>
+                    </div>
+
+                </div>
+
+                <div class="past-info">
+
+                    <p>
+                        <i class="fa-solid fa-calendar"></i>
+                        05 September 2026
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-clock"></i>
+                        11:30 AM
+                    </p>
+
+                </div>
+
+                <span class="completed">
+                    Completed
+                </span>
+
+            </div>
+
+
+            <div class="past-card">
+
+                <div class="doctor">
+
+                    <div class="doctor-img">
+                        <img src="../images/doctors8.jpg" alt="Doctor">
+                    </div>
+
+                    <div>
+                        <h3>Dr. Neha Verma</h3>
+                        <p>Dermatologist</p>
+                        <span>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Max Hospital
+                        </span>
+                    </div>
+
+                </div>
+
+                <div class="past-info">
+
+                    <p>
+                        <i class="fa-solid fa-calendar"></i>
+                        28 August 2026
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-clock"></i>
+                        04:00 PM
+                    </p>
+
+                </div>
+
+                <span class="completed">
+                    Completed
+                </span>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
