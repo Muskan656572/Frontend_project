@@ -13,8 +13,8 @@
         <a href="./home.html">Home</a>
         <a href="./about.html">About Us</a>
         <a href="./services.html">Services</a>
-        <a href="">Why Us</a>
-        <a href="">Pricing</a>
+        <a href="./doctors.html">Doctors</a>
+        <a href="./contact.html">Contact</a>
 
         <a href="./signin.html"><button class="btn" onclick="">Sign In</button></a>
 
@@ -22,17 +22,17 @@
 
     <section class="section1">
         <div class="container1">
-            <img src="../images/service-details1.png">
+            <img  id="service-image1" src="../images/service-details1.png">
 
             <div class="text">
                 
-                <p class="text-para">Our Services</p>
+                <p class="text-para" id="service-category">Our Services</p>
                 
             </div>
-            <h1>Cardiology</h1>
-            <p class="sec1p">Expert heart care with trusted doctors <br> and personalized treatment.</p>
+            <h1 id="service-title">Cardiology</h1>
+            <p class="sec1p" id="service-description">Expert heart care with trusted doctors <br> and personalized treatment.</p>
 
-            <button class="bookBtn">Book Appointment</button>
+            <button class="bookBtn"><a href="./doctors.html">Book Appointment</a></button>
             <span>→</span>
         </div>
 
@@ -45,37 +45,37 @@
                     <p>About Service</p>
                     <span></span>
 
-                    <h3>Specialized Cardiology Care</h3>   
+                    <h3 id="about-title">Specialized Cardiology Care</h3>   
                     
 
-                    <p>Our cardiology service provides consultation and care
+                    <p id="about-description">Our cardiology service provides consultation and care
                     for various<br> heart-related concerns. Our qualified doctors focus on
                      <br> providing personalized healthcare to every patient. </p>
                 </div>
 
                 <div class="img2">
-                    <img src="../images/service-details2.png">
+                    <img id="service-image2" src="../images/service-details2.png">
                 </div>
 
                 <div class="points">
                     <div class="point1">
                         <i class="fa-solid fa-circle-check"></i>
-                        <p>Experienced Specialists</p>
+                        <p id="point1">Experienced Specialists</p>
                     </div>
 
                     <div class="point2">
                         <i class="fa-solid fa-circle-check"></i>
-                        <p>Personalized Treatment</p>
+                        <p id="point2">Personalized Treatment</p>
                     </div>
 
                     <div class="point3">
                        <i class="fa-solid fa-circle-check"></i>
-                       <p>Advanced Technology</p>
+                       <p id="point3">Advanced Technology</p>
                     </div>
 
                     <div class="point4">
                        <i class="fa-solid fa-circle-check"></i>
-                       <p>Better Heart Health</p>
+                       <p id="point4">Better Heart Health</p>
                     </div>
 
                 </div>
@@ -88,44 +88,44 @@
         <div class="container3">
             <p>What We Offer</p>
         </div>
-        <h2>Cardiology Services</h2>
+        <h2 id="offer-title">Cardiology Services</h2>
 
         <div class="container4">
             <div class="consult">
                 <div class="icon-div">
-                    <i class="fa-solid fa-heart-pulse"></i>
+                    <i id="offer-icon1" class="fa-solid fa-heart-pulse"></i>
                 </div>
-                <h5>Heart Consultation</h5>
-                <p>Consultation for heart-related <br> health concerns.</p>
+                <h5 id="offer-title1">Heart Consultation</h5>
+                <p id="offer-description1">Consultation for heart-related <br> health concerns.</p>
             </div>
             <div class="check">
                 <div class="icon-div">
-                    <i class="fa-solid fa-stethoscope"></i>
+                    <i id="offer-icon2" class="fa-solid fa-stethoscope"></i>
                 </div>
-                <h5>Heart Checkup</h5>
-                <p>Regular checkups and <br> health assessments.</p>
+                <h5 id="offer-title2">Heart Checkup</h5>
+                <p id="offer-description2">Regular checkups and <br> health assessments.</p>
             </div>
             <div class="care">
                 <div class="icon-div">
-                    <i class="fa-solid fa-heart-circle-plus"></i>
+                    <i id="offer-icon3" class="fa-solid fa-heart-circle-plus"></i>
                 </div>
-                <h5>Cardiac Care</h5>
-                <p>Personalized care from <br> qualified specialists.</p>
+                <h5 id="offer-title3">Cardiac Care</h5>
+                <p id="offer-description3">Personalized care from <br> qualified specialists.</p>
             </div>
         </div>
     </section>
     <section class="section4">
         <div class="container5">
-            <img src="../images/service-details3.png">
+            <img  id="service-image3" src="../images/service-details3.png">
         </div>
 
         <div class="container6">
             <i class="fa-solid fa-calendar-days"></i>
         </div>
-        <h4>Need Cardiology Care?</h4>
-        <p>Book an appointment with one of our trusted doctors.</p>
+        <h4 id="cta-title">Need Cardiology Care?</h4>
+        <p id="cta-description">Book an appointment with one of our trusted doctors.</p>
 
-        <button class="bookbtn">Book Appointment</button>
+        <button class="bookbtn"><a href="./doctors.html">Book Appointment</a></button>
         <span>→</span>
     </section>
 
@@ -170,7 +170,6 @@
                 <a href="./home.html" id="first">Home</a><br>
                 <a href="./services.html">Services</a><br>
                 <a href="./doctors.html">Doctors</a><br>
-                <a href="">Hospitals</a><br>
                 <a href="./about.html">About Us</a><br>
                 <a href="./contact.html">Contact</a><br>
             </div>
@@ -178,12 +177,12 @@
             <div class="serv">
                 <p>Our Services</p>
 
-                <a href="" id="first">General Checkup</a><br>
-                <a href="">Cardiology</a><br>
-                <a href="">Dental Care</a><br>
-                <a href="">Dermatology</a><br>
-                <a href="">Pediatrics</a><br>
-                <a href="">Laboratory Tests</a><br>
+                <a href="./service-details.html?service=general" id="first">General Checkup</a><br>
+                <a href="./service-details.html?service=cardiology">Cardiology</a><br>
+                <a href="./service-details.html?service=dental">Dental Care</a><br>
+                <a href="./service-details.html?service=dermatology">Dermatology</a><br>
+                <a href="./service-details.html?service=pediatrics">Pediatrics</a><br>
+                <a href="./service-details.html?service=lab">Laboratory Tests</a><br>
             </div>
             <span class="linee"></span>
             <div class="contact">
@@ -219,5 +218,6 @@
         <span></span>
         <p>Terms & Conditions</p>
     </div>
+    <script src="../JS/service-details.js"></script>
 </body>
 </html>

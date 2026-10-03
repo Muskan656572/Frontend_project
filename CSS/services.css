@@ -100,6 +100,10 @@
     font-size: 15px;
     cursor: pointer;
 }
+.bookBtn a{
+    text-decoration: none;
+    color:white;
+}
 .container1 span{
     color:white;
     font-size: 20px;
@@ -686,6 +690,10 @@
     font-size: 13px;
     cursor: pointer;
     border: 2px solid rgba(136, 136, 218, 0.626);
+}
+.bookBtn1 a{
+    text-decoration: none;
+    color:white;
 }
 .bookBtn1 span{
     position: absolute;

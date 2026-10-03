@@ -100,6 +100,10 @@
     font-size: 15px;
   
 }
+.bookBtn a{
+    text-decoration: none;
+    color:white;
+}
 .bookBtn:hover{
     background-color:#1d55af;
     cursor: pointer;
@@ -344,6 +348,10 @@
     background-color:#6853c8;
     color:white;
     font-size: 14px;
+}
+.bookbtn a{
+    text-decoration: none;
+    color:white;
 }
 .bookbtn:hover{
     background-color:#1d55af;

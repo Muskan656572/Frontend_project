@@ -140,7 +140,10 @@
 
     font-size: 22px;
 }
-
+.service-btn a{
+    text-decoration: none;
+    color:white;
+}
 .section2{
     height:450px;
     width:100%;
