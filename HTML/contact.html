@@ -16,7 +16,44 @@
         <a href="./doctors.html">Doctors</a>
         <a href="./contact.html">Contact</a>
 
-        <a href="./signin.html"><button class="btn" onclick="">Sign In</button></a>
+        <div class="nav-user">
+
+    <!-- Login nahi hai -->
+    <a href="./signin.html" id="signInLink">
+        <button class="btn">Sign In</button>
+    </a>
+
+    <!-- Login hai -->
+    <div class="user-menu" id="userMenu">
+
+        <!-- User ka first letter -->
+        <button class="user-letter" id="userLetter">
+            
+        </button>
+
+        <!-- Click karne par ye dropdown open hoga -->
+        <div class="dropdown" id="userDropdown">
+
+            <a href="#" id="dashboardLink">
+                <i class="fa-solid fa-house"></i>
+                Dashboard
+            </a>
+
+            <button id="logoutBtn">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                Logout
+            </button>
+
+            <button id="deleteAccountBtn">
+                <i class="fa-solid fa-trash"></i>
+                Delete Account
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
     </nav>
 
     <section class="section1">
@@ -199,5 +236,6 @@
         <span></span>
         <p>Terms & Conditions</p>
     </div>
+    <script src="../JS/navbar.js"></script>
 </body>
 </html>

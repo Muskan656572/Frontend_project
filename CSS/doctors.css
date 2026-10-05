@@ -3,34 +3,210 @@
     padding:0;
     box-sizing: border-box;
 }
-.navbar{
+.navbar {
+    height: 80px;
+    width: 100%;
+
     display: flex;
     justify-content: center;
-    height:80px;
     align-items: center;
-    gap:100px;
-    background-color:rgba(105, 90, 205, 0.796)
-}
-.navbar a{
-    text-decoration: none;
-    color:white;
-}
-.a{
-    height:40px;
-    width:100px;
-    border-radius:30px;
-    position: absolute;
-    right:200px;
+
+    gap: 100px;
+
+    background-color: rgba(105, 90, 205, 0.796);
+
+    position: relative;
 }
 
-.btn{
-    height:40px;
-    width:100px;
-    border-radius:30px;
+
+/* Normal navbar links */
+
+.navbar > a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* ================= SIGN IN ================= */
+
+.nav-user {
     position: absolute;
+
     right: 200px;
-    top:20px;
+    top: 20px;
+
+    z-index: 1000;
+}
+
+
+/* Sign In button */
+
+.nav-user .btn {
+    height: 40px;
+    width: 100px;
+
+    border-radius: 30px;
+
+    border: 1px solid #999;
+
+    background-color: white;
+
+    color: black;
+
+    font-size: 16px;
+
     cursor: pointer;
+}
+
+
+/* ================= USER MENU ================= */
+
+.user-menu {
+    position: relative;
+
+    display: none;
+}
+
+
+/* User first letter */
+
+.user-letter {
+    height: 42px;
+    width: 42px;
+
+    border: none;
+    border-radius: 50%;
+
+    background-color: white;
+
+    color: #7568d0;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ================= DROPDOWN ================= */
+
+.dropdown {
+    display: none;
+
+    position: absolute;
+
+    top: 52px;
+    right: 0;
+
+    width: 170px;
+
+    padding: 8px;
+
+    background-color: white;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.18);
+
+    z-index: 9999;
+}
+
+
+/* JS click ke baad */
+
+.dropdown.show {
+    display: block;
+}
+
+
+/* Dashboard link */
+
+.dropdown a {
+    display: block;
+
+    width: 100%;
+
+    padding: 11px;
+
+    box-sizing: border-box;
+
+    color: #18335d;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    border-radius: 8px;
+}
+
+
+/* Dashboard hover */
+
+.dropdown a:hover {
+    background-color: #f3effb;
+}
+
+
+/* Logout button */
+
+.dropdown button {
+    display: block;
+
+    width: 100%;
+
+    padding: 11px;
+
+    margin: 0;
+
+    border: none;
+
+    background-color: transparent;
+
+    color: #d9534f;
+
+    text-align: left;
+
+    font-size: 15px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+
+
+/* Logout hover */
+
+.dropdown button:hover {
+    background-color: #fff0f0;
+}
+#deleteAccountBtn {
+    width: 100%;
+
+    padding: 11px;
+
+    margin: 0;
+
+    border: none;
+
+    background-color: transparent;
+
+    color: #d9534f;
+
+    text-align: left;
+
+    font-size: 15px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+
+#deleteAccountBtn:hover {
+    background-color: #fff0f0;
 }
 .section1{
     height:370px;

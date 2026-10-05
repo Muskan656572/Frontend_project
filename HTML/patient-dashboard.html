@@ -33,9 +33,9 @@
                     <i class="fa-solid fa-user"></i>
                 </div>
 
-                <h3>Aarav Sharma</h3>
+                <h3 id="sidebarUserName"></h3>
 
-                <p>Patient</p>
+                <p>patient</p>
 
             </div>
 
@@ -51,7 +51,11 @@
                     <i class="fa-solid fa-user"></i>
                     My Profile
                 </a>
-
+                <a href="./home.html">
+                    <i class="fa-solid fa-house"></i>
+                    Home
+                </a>
+                
                 <a href="./patient-appointments.html">
                     <i class="fa-solid fa-calendar-check"></i>
                     Appointments
@@ -93,7 +97,7 @@
                 <div>
                     <p class="small-text">PATIENT DASHBOARD</p>
 
-                    <h1>Good Morning, Aarav 👋</h1>
+                    <h1>Good Morning, <span id="userName"></span> 👋</h1>
 
                     <p class="welcome-text">
                         Welcome back! Here's your health overview.
@@ -111,7 +115,7 @@
                             <i class="fa-solid fa-user"></i>
                         </div>
 
-                        <span>Aarav</span>
+                        <span id="topUserName"></span>
 
                     </div>
 
@@ -445,6 +449,6 @@
         </main>
 
     </div>
-
+    <script src="../JS/patient-dashboard.js"></script>
 </body>
 </html>
