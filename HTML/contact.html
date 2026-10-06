@@ -121,24 +121,51 @@
 
             <div class="info">
                 <h1>Get in Touch with Us</h1>
-                <div class="input-box">
-                    <i class="fa-solid fa-user"></i>
-                    <input type="text" placeholder="Full Name">
-                </div>
-                <div class="input-box">
-                    <i class="fa-solid fa-envelope"></i>
-                    <input type="email" placeholder="Email Address">
-                </div>
 
-                <div class="input-box">
-                    <i class="fa-solid fa-paperclip"></i>
-                    <input type="text" placeholder="Subject">
-                </div>
-                <div class="text">
-                    <i class="fa-solid fa-message"></i>
-                    <textarea placeholder="Your Message"></textarea>
-                </div>
-                <button class="send-btn">SEND MESSAGE</button>
+                <form id="contactForm">
+
+                    <div class="input-box">
+                        <i class="fa-solid fa-user"></i>
+                        <input
+                            type="text"
+                            id="contactName"
+                            placeholder="Full Name"
+                        >
+                    </div>
+
+                    <div class="input-box">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input
+                            type="email"
+                            id="contactEmail"
+                            placeholder="Email Address"
+                        >
+                    </div>
+
+                    <div class="input-box">
+                        <i class="fa-solid fa-paperclip"></i>
+                        <input
+                            type="text"
+                            id="contactSubject"
+                            placeholder="Subject"
+                        >
+                    </div>
+
+                    <div class="text">
+                        <i class="fa-solid fa-message"></i>
+                        <textarea
+                            id="contactMessage"
+                            placeholder="Your Message"
+                        ></textarea>
+                    </div>
+
+                    <p id="contactError"></p>
+
+                    <button type="submit" class="send-btn">
+                        SEND MESSAGE
+                    </button>
+
+                </form>
                 
             </div>
 
@@ -237,5 +264,6 @@
         <p>Terms & Conditions</p>
     </div>
     <script src="../JS/navbar.js"></script>
+    <script src="../JS/contact.js"></script>
 </body>
 </html>
