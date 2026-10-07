@@ -1242,6 +1242,10 @@ select{
     gap:10px;
     
 }
+#doctorRating1{
+    opacity:1;
+    font-weight:600;
+}
 .rating{
     height:30px;
     width:140px;
@@ -1368,7 +1372,7 @@ select{
     font-weight:600;
     opacity:0.8;
 }
-#view{
+.view{
     height:50px;
     width:250px;
     margin-left:20px;

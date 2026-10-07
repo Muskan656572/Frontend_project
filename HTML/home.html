@@ -309,7 +309,7 @@
                 <input type="text" id="searchDoctor" placeholder="              Search doctor, specialization, or name...">
                 <button id="allDoctors">All Doctors</button>
                 <select id="Speciality">
-                    <option value="all">All</option>
+                    <option value="all">Speciality</option>
                     <option value="cardiology">Cardiology</option>
                     <option value="neurology">Neurology</option>
                     <option value="pediatrics">Pediatrics</option>
@@ -326,6 +326,9 @@
                     <option value="chennai">Chennai</option>
                     <option value="kolkata">Kolkata</option>
                     <option value="noida">Noida</option>
+                    <option value="gurgaon">Gurgaon</option>
+                    <option value="faridabad">Faridabad</option>
+                    <option value="pune">Pune</option>
                 </select>
                 <span>⌄</span>
                 <select id="exp">
@@ -345,14 +348,14 @@
         </div>
 
         <div class="doctorsSection">
-            <div class="doc1">
+            <div class="doc1" id="doctor1">
                 <div class="docimg">
-                    <img src="../images/doctors2.jpg">
+                    <img id="doctorImage1" src="../images/doctors2.jpg">
                 </div>
 
                 <div class="spec">
-                    <h2>Dr. Priya Sharma</h2>
-                    <p>Cardiologist</p>
+                    <h2 id="doctorName1">Dr. Priya Sharma</h2>
+                    <p id="doctorSpeciality1">Cardiologist</p>
                 </div>
 
                 <div class="info">
@@ -360,8 +363,9 @@
                         <div>
                             <i class="fa-solid fa-star"></i>
                         </div>
-                        <p>4.9
-                            <span>(124 reviews)</span>
+                        <p>
+                            <span id="doctorRating1">4.9</span>
+                            <span id="doctorReviews1">(124 reviews)</span>
                         </p>
                         
                     </div>
@@ -369,7 +373,7 @@
                         <div>
                             <i class="fa-regular fa-calendar"></i>
                         </div>
-                        <p>10+ Years Experience</p>
+                        <p id="doctorExperience1">10+ Years Experience</p>
                     </div>
                     
                 </div>
@@ -378,7 +382,7 @@
                     <div>
                         <i class="fa-solid fa-location-dot"></i>
                     </div>
-                    <p>Sunrise Medical Center New Delhi, Delhi</p>
+                    <p id="doctorClinic1">Sunrise Medical Center New Delhi, Delhi</p>
                 </div>
                 <span class="linedoc"></span>
 
@@ -391,37 +395,38 @@
                 </div>
 
                 <div class="slots">
-                    <div class="slot1">
+                    <div class="slot1" id="doctorSlot1A">
                         <p>10:00 AM</p>
                     </div>
-                    <div class="slot2">
+                    <div class="slot2" id="doctorSlot1B">
                         <p>11:30 AM</p>
                     </div>
-                    <div class="slot3">
+                    <div class="slot3" id="doctorSlot1C">
                         <p>02:00 PM</p>
                     </div>
                 
                 </div>
-                <button id="view">View Profile
+                <button class="view">View Profile
                     <span>→</span>
                 </button>
             </div>
 
-            <div class="doc2">
+            <div class="doc2" id="doctor2">
                 <div class="docimg">
-                    <img src="../images/doc2.jpg">
+                    <img id="doctorImage2" src="../images/doc2.jpg">
                 </div>
                 <div class="spec">
-                    <h2>Dr. Amit Verma</h2>
-                    <p>Dentist</p>
+                    <h2 id="doctorName2">Dr. Amit Verma</h2>
+                    <p id="doctorSpeciality2">Dentist</p>
                 </div>
                 <div class="info">
                     <div class="rating">
                         <div>
                             <i class="fa-solid fa-star"></i>
                         </div>
-                        <p>4.8
-                            <span>(24 reviews)</span>
+                        <p>
+                            <span id="doctorRating2">4.8</span>
+                            <span id="doctorReviews2">(24 reviews)</span>
                         </p>
                         
                     </div>
@@ -429,7 +434,7 @@
                         <div>
                             <i class="fa-regular fa-calendar"></i>
                         </div>
-                        <p>8+ Years Experience</p>
+                        <p id="doctorExperience2">8+ Years Experience</p>
                     </div>
                     
                 </div>
@@ -438,7 +443,7 @@
                     <div>
                         <i class="fa-solid fa-location-dot"></i>
                     </div>
-                    <p>Smile Care Hospital Gurgaon, Haryana</p>
+                    <p id="doctorClinic2">Smile Care Hospital Gurgaon, Haryana</p>
                 </div>
                 <span class="linedoc"></span>
 
@@ -451,37 +456,38 @@
                 </div>
 
                 <div class="slots">
-                    <div class="slot1">
+                    <div class="slot1" id="doctorSlot2A">
                         <p>9:00 AM</p>
                     </div>
-                    <div class="slot2">
+                    <div class="slot2" id="doctorSlot2B">
                         <p>11:30 AM</p>
                     </div>
-                    <div class="slot3">
+                    <div class="slot3" id="doctorSlot2C">
                         <p>01:00 PM</p>
                     </div>
                 
                 </div>
-                <button id="view">View Profile
+                <button class="view">View Profile
                     <span>→</span>
                 </button>
             </div>
 
-            <div class="doc3">
+            <div class="doc3" id="doctor3">
                 <div class="docimg">
-                    <img src="../images/doc4.jpg">
+                    <img id="doctorImage3" src="../images/doc4.jpg">
                 </div>
                 <div class="spec">
-                    <h2>Dr. Neha Kapoor</h2>
-                    <p>Dermatologist</p>
+                    <h2 id="doctorName3">Dr. Neha Kapoor</h2>
+                    <p id="doctorSpeciality3">Dermatologist</p>
                 </div>
                 <div class="info">
                     <div class="rating">
                         <div>
                             <i class="fa-solid fa-star"></i>
                         </div>
-                        <p>4.7
-                            <span>(86 reviews)</span>
+                        <p>
+                            <span id="doctorRating3">4.7</span>
+                            <span id="doctorReviews3">(86 reviews)</span>
                         </p>
                         
                     </div>
@@ -489,7 +495,7 @@
                         <div>
                             <i class="fa-regular fa-calendar"></i>
                         </div>
-                        <p>6+ Years Experience</p>
+                        <p id="doctorExperience3">6+ Years Experience</p>
                     </div>
                     
                 </div>
@@ -498,7 +504,7 @@
                     <div>
                         <i class="fa-solid fa-location-dot"></i>
                     </div>
-                    <p>Skin & Care Clinic Noida, Uttar Pradesh</p>
+                    <p id="doctorClinic3">Skin & Care Clinic Noida, Uttar Pradesh</p>
                 </div>
                 <span class="linedoc"></span>
 
@@ -507,41 +513,42 @@
                         <i class="fa-solid fa-clock"></i>
 
                     </div>
-                    <p>Available Slots</p>
+                    <p >Available Slots</p>
                 </div>
 
                 <div class="slots">
-                    <div class="slot1">
+                    <div class="slot1" id="doctorSlot3A">
                         <p>9:30 AM</p>
                     </div>
-                    <div class="slot2">
+                    <div class="slot2" id="doctorSlot3B">
                         <p>12:30 AM</p>
                     </div>
-                    <div class="slot3">
+                    <div class="slot3" id="doctorSlot3C">
                         <p>03:00 PM</p>
                     </div>
                 
                 </div>
-                <button id="view">View Profile
+                <button class="view">View Profile
                     <span>→</span>
                 </button>
             </div>
 
-            <div class="doc4">
+            <div class="doc4" id="doctor4">
                 <div class="docimg">
-                    <img src="../images/doc3.jpg">
+                    <img id="doctorImage4" src="../images/doc3.jpg">
                 </div>
                 <div class="spec">
-                    <h2>Dr. Rohan Gupta</h2>
-                    <p>General Physician</p>
+                    <h2 id="doctorName4">Dr. Rohan Gupta</h2>
+                    <p id="doctorSpeciality4">General Physician</p>
                 </div>
                 <div class="info">
                     <div class="rating">
                         <div>
                             <i class="fa-solid fa-star"></i>
                         </div>
-                        <p>4.6
-                            <span>(72 reviews)</span>
+                        <p>
+                            <span id="doctorRating4">4.6</span>
+                            <span id="doctorReviews4">(72 reviews)</span>
                         </p>
                         
                     </div>
@@ -549,7 +556,7 @@
                         <div>
                             <i class="fa-regular fa-calendar"></i>
                         </div>
-                        <p>5+ Years Experience</p>
+                        <p id="doctorExperience4">5+ Years Experience</p>
                     </div>
                     
                 </div>
@@ -558,7 +565,7 @@
                     <div>
                         <i class="fa-solid fa-location-dot"></i>
                     </div>
-                    <p>Health Plus Clinic Faridabad, Haryana</p>
+                    <p id="doctorClinic4">Health Plus Clinic Faridabad, Haryana</p>
                 </div>
                 <span class="linedoc"></span>
 
@@ -571,18 +578,18 @@
                 </div>
 
                 <div class="slots">
-                    <div class="slot1">
+                    <div class="slot1" id="doctorSlot4A">
                         <p>8:00 AM</p>
                     </div>
-                    <div class="slot2">
+                    <div class="slot2" id="doctorSlot4B">
                         <p>10:30 AM</p>
                     </div>
-                    <div class="slot3">
+                    <div class="slot3" id="doctorSlot4C">
                         <p>01:30 PM</p>
                     </div>
                 
                 </div>
-                <button id="view">View Profile
+                <button class="view">View Profile
                     <span>→</span>
                 </button>
             </div>
@@ -591,7 +598,8 @@
         </div>
 
         <div class="viewAll">
-            <button id="viewAll">View All Doctors
+            <button id="viewAll">
+                <a href="./doctors.html" style="text-decoration: none; color: inherit;">View All Doctors</a>
                 <span>→</span>
             </button>
         </div>
@@ -719,6 +727,7 @@
         <span></span>
         <p>Terms & Conditions</p>
     </div>
+    <script src="../JS/doctor-data.js"></script>
     <script src="../JS/home.js"></script>
     <script src="../JS/navbar.js"></script>
     

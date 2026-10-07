@@ -19,8 +19,8 @@
         <a href="./home.html">Home</a>
         <a href="./about.html">About Us</a>
         <a href="./services.html">Services</a>
-        <a href="">Why Us</a>
-        <a href="">Pricing</a>
+        <a href="./doctors.html">Doctors</a>
+        <a href="./contact.html">Contact</a>
 
        <div class="nav-user">
 
@@ -71,7 +71,7 @@
             <!-- Doctor Image -->
             <div class="doctor-image">
 
-                <img src="../images/doctors2.jpg" alt="Doctor">
+                <img id="profileDoctorImage" src="../images/doctors2.jpg" alt="Doctor">
 
             </div>
 
@@ -84,11 +84,11 @@
                     Verified Doctor
                 </div>
 
-                <h1>Dr. Priya Sharma</h1>
+                <h1 id="profileDoctorName">Dr. Priya Sharma</h1>
 
-                <h3>Cardiologist</h3>
+                <h3 id="profileDoctorSpeciality">Cardiologist</h3>
 
-                <p class="description">
+                <p id="profileDoctorDescription" class="description">
                     Dr. Priya Sharma is an experienced cardiologist
                     providing personalized and trusted heart care
                     to patients.
@@ -99,9 +99,9 @@
                 <div class="rating">
 
                     <i class="fa-solid fa-star"></i>
-                    <span>4.9</span>
+                    <span id="profileDoctorRating">4.9</span>
 
-                    <span class="reviews">
+                    <span id="profileDoctorReviews" class="reviews">
                         (124 Reviews)
                     </span>
 
@@ -116,7 +116,7 @@
                         <p>
                             <strong>Experience</strong>
                             <br>
-                            10+ Years
+                            <span id="profileDoctorExperience">10+ years</span>
                         </p>
                     </div>
 
@@ -125,7 +125,7 @@
                         <p>
                             <strong>Hospital</strong>
                             <br>
-                            CarePlus Hospital
+                            <span id="profileDoctorHospital">City Hospital</span>
                         </p>
                     </div>
 
@@ -134,7 +134,7 @@
                         <p>
                             <strong>Location</strong>
                             <br>
-                            New Delhi
+                            <span id="profileDoctorLocation">New Delhi, India</span>
                         </p>
                     </div>
 
@@ -146,10 +146,10 @@
 
                     <h3>Specializations</h3>
 
-                    <span>Heart Care</span>
-                    <span>Cardiology</span>
-                    <span>ECG</span>
-                    <span>Cardiac Care</span>
+                    <span id="specialization1">Heart Care</span>
+                    <span id="specialization2">Cardiology</span>
+                    <span id="specialization3">ECG</span>
+                    <span id="specialization4">Cardiac Care</span>
 
                 </div>
 
@@ -184,7 +184,7 @@
 
                 <h2>Professional & Experienced Care</h2>
 
-                <p>
+                <p id="doctorProfileAbout">
                     Dr. Priya Sharma is a qualified cardiologist
                     with more than 10 years of experience in
                     diagnosing and treating heart-related conditions.
@@ -229,8 +229,8 @@
                     <i class="fa-solid fa-graduation-cap"></i>
 
                     <div>
-                        <h4>MBBS</h4>
-                        <p>AIIMS New Delhi</p>
+                        <h4 id="degree1">MBBS</h4>
+                        <p id="college1">AIIMS New Delhi</p>
                     </div>
 
                 </div>
@@ -241,8 +241,8 @@
                     <i class="fa-solid fa-graduation-cap"></i>
 
                     <div>
-                        <h4>MD - Cardiology</h4>
-                        <p>Delhi Medical University</p>
+                        <h4 id="degree2">MD - Cardiology</h4>
+                        <p id="college2">Delhi Medical University</p>
                     </div>
 
                 </div>
@@ -271,18 +271,18 @@
         <div class="schedule">
 
             <div class="day">
-                <h3>Monday</h3>
-                <p>10:00 AM - 2:00 PM</p>
+                <h3 id="day1">Monday</h3>
+                <p id="time1">10:00 AM - 2:00 PM</p>
             </div>
 
             <div class="day">
-                <h3>Wednesday</h3>
-                <p>10:00 AM - 2:00 PM</p>
+                <h3 id="day2">Wednesday</h3>
+                <p id="time2">10:00 AM - 2:00 PM</p>
             </div>
 
             <div class="day">
-                <h3>Friday</h3>
-                <p>4:00 PM - 8:00 PM</p>
+                <h3 id="day3">Friday</h3>
+                <p id="time3">4:00 PM - 8:00 PM</p>
             </div>
 
         </div>
@@ -332,7 +332,6 @@
                 <a href="./home.html" id="first">Home</a><br>
                 <a href="./services.html">Services</a><br>
                 <a href="./doctors.html">Doctors</a><br>
-                <a href="">Hospitals</a><br>
                 <a href="./about.html">About Us</a><br>
                 <a href="./contact.html">Contact</a><br>
             </div>
@@ -340,12 +339,12 @@
             <div class="serv">
                 <p>Our Services</p>
 
-                <a href="" id="first">General Checkup</a><br>
-                <a href="">Cardiology</a><br>
-                <a href="">Dental Care</a><br>
-                <a href="">Dermatology</a><br>
-                <a href="">Pediatrics</a><br>
-                <a href="">Laboratory Tests</a><br>
+                <a href="./service-details.html?service=general" id="first">General Checkup</a><br>
+                <a href="./service-details.html?service=cardiology">Cardiology</a><br>
+                <a href="./service-details.html?service=dental">Dental Care</a><br>
+                <a href="./service-details.html?service=dermatology">Dermatology</a><br>
+                <a href="./service-details.html?service=pediatrics">Pediatrics</a><br>
+                <a href="./service-details.html?service=lab">Laboratory Tests</a><br>
             </div>
             <span class="linee"></span>
             <div class="contact">
@@ -381,6 +380,8 @@
         <span></span>
         <p>Terms & Conditions</p>
     </div>
+    <script src="../JS/doctor-data.js"></script>
+    <script src="../JS/doctor-profile.js"></script>
     <script src="../JS/navbar.js"></script>
 </body>
 </html>
