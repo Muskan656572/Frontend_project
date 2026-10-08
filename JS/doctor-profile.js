@@ -59,3 +59,12 @@ if (doctor) {
     document.getElementById("time3").textContent = doctor.availability[2]["time"];
 
 }
+const bookButton = document.querySelector(".book-btn");
+
+if (bookButton && doctor) {
+
+    bookButton.href =
+        "./appointment.html?doctor=" +
+        encodeURIComponent(doctor.name);
+
+}

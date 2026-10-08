@@ -105,7 +105,7 @@
 
             <div class="doctor-card">
 
-                <img src="../images/doctors2.jpg" alt="Doctor">
+                <img id="appointmentDoctorImage" src="../images/doctors2.jpg" alt="Doctor">
 
                 <div class="doctor-details">
 
@@ -117,21 +117,21 @@
 
                     </div>
 
-                    <h2>Dr. Priya Sharma</h2>
+                    <h2 id="appointmentDoctorName">Dr. Priya Sharma</h2>
 
-                    <h3>Cardiologist</h3>
+                    <h3 id="appointmentDoctorSpeciality">Cardiologist</h3>
 
                     <div class="rating">
 
                         <i class="fa-solid fa-star"></i>
 
-                        <strong>4.9</strong>
+                        <strong id="appointmentDoctorRating">4.9</strong>
 
-                        <span>(124 Reviews)</span>
+                        <span id="appointmentDoctorReviews">(124 Reviews)</span>
 
                     </div>
 
-                    <p>
+                    <p id="appointmentDoctorDescription">
                         Experienced cardiologist providing
                         personalized heart care and treatment.
                     </p>
@@ -140,12 +140,16 @@
 
                         <div>
                             <i class="fa-solid fa-location-dot"></i>
-                            New Delhi
+                            <span id="appointmentDoctorLocation">
+                                New Delhi
+                            </span>
                         </div>
 
                         <div>
                             <i class="fa-solid fa-briefcase"></i>
-                            10+ Years Experience
+                            <span id="appointmentDoctorExperience">
+                                10+ Years Experience
+                            </span>
                         </div>
 
                     </div>
@@ -167,7 +171,7 @@
                 </p>
 
 
-                <form>
+                <form id="appointmentForm">
 
 
                     <!-- Name -->
@@ -180,7 +184,7 @@
 
                             <i class="fa-solid fa-user"></i>
 
-                            <input type="text"
+                            <input id="patientName" type="text"
                                 placeholder="Enter your full name">
 
                         </div>
@@ -199,7 +203,7 @@
 
                             <i class="fa-solid fa-envelope"></i>
 
-                            <input type="email"
+                            <input id="patientEmail" type="email"
                                 placeholder="Enter your email">
 
                         </div>
@@ -218,7 +222,7 @@
 
                             <i class="fa-solid fa-phone"></i>
 
-                            <input type="tel"
+                            <input id="patientPhone" type="tel"
                                 placeholder="Enter your phone number">
 
                         </div>
@@ -239,7 +243,7 @@
 
                                 <i class="fa-solid fa-calendar"></i>
 
-                                <input type="date">
+                                <input id="appointmentDate" type="date">
 
                             </div>
 
@@ -254,7 +258,7 @@
 
                                 <i class="fa-solid fa-clock"></i>
 
-                                <select>
+                                <select id="appointmentTime">
 
                                     <option value="">
                                         Select Time
@@ -302,7 +306,7 @@
 
                         <div class="textarea-box">
 
-                            <textarea
+                            <textarea id="appointmentReason" 
                                 placeholder="Write your reason for appointment"></textarea>
 
                         </div>
@@ -310,7 +314,7 @@
                     </div>
 
 
-
+                    <p id="appointmentError"></p>
                     <!-- Button -->
 
                     <button type="submit" class="book-btn">
@@ -425,6 +429,8 @@
         <p>Terms & Conditions</p>
     </div>
 
+    <script src="../JS/doctor-data.js"></script>
+    <script src="../JS/appointment.js"></script>
     <script src="../JS/navbar.js"></script>
 </body>
 
