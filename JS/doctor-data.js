@@ -1123,5 +1123,369 @@ const doctors = [
                     time: "10:00 AM - 2:00 PM"
                 }
             ]
+        },
+        
+        {
+            name: "Dr. Rahul Mehta",
+            image: "../images/doctors3.jpg",
+            speciality: "neurology",
+            specialityName: "Neurologist",
+            clinic: "Neuro Care Hospital Mumbai, Maharashtra",
+            location: "Mumbai, Maharashtra",
+            experience: 8,
+            rating: 4.8,
+            reviews: 93,
+            slots: ["09:00 AM", "12:00 PM", "03:00 PM"],
+
+            description:
+                "Dr. Rahul Mehta provides personalized neurological care for brain, nerve and headache-related conditions.",
+
+            specializations: [
+                "Neurology",
+                "Migraine Care",
+                "Brain Health",
+                "Nerve Disorders"
+            ],
+
+            about:
+                "Dr. Rahul Mehta provides neurological consultation and personalized treatment for common brain and nerve conditions.",
+
+            education: [
+                {
+                    degree: "MBBS",
+                    college: "Grant Medical College"
+                },
+                {
+                    degree: "MD - Neurology",
+                    college: "Mumbai Medical University"
+                }
+            ],
+
+            availability: [
+                {
+                    day: "Monday",
+                    time: "9:00 AM - 1:00 PM"
+                },
+                {
+                    day: "Wednesday",
+                    time: "12:00 PM - 4:00 PM"
+                },
+                {
+                    day: "Saturday",
+                    time: "10:00 AM - 2:00 PM"
+                }
+            ]
+        },
+
+        {
+            name: "Dr. Ananya Singh",
+            image: "../images/doctors4.jpg",
+            speciality: "pediatrics",
+            specialityName: "Pediatrician",
+            clinic: "Child Care Hospital Bangalore, Karnataka",
+            location: "Bangalore, Karnataka",
+            experience: 7,
+            rating: 4.9,
+            reviews: 112,
+            slots: ["10:00 AM", "01:00 PM", "04:00 PM"],
+
+            description:
+                "Dr. Ananya Singh provides compassionate pediatric care focused on children's health, growth and development.",
+
+            specializations: [
+                "Child Care",
+                "Vaccination",
+                "Child Nutrition",
+                "Pediatric Health"
+            ],
+
+            about:
+                "Dr. Ananya Singh specializes in pediatric healthcare and provides preventive and medical care for infants, children and teenagers.",
+
+            education: [
+                {
+                    degree: "MBBS",
+                    college: "Bangalore Medical College"
+                },
+                {
+                    degree: "MD - Pediatrics",
+                    college: "Karnataka Medical University"
+                }
+            ],
+
+            availability: [
+                {
+                    day: "Tuesday",
+                    time: "10:00 AM - 2:00 PM"
+                },
+                {
+                    day: "Thursday",
+                    time: "1:00 PM - 5:00 PM"
+                },
+                {
+                    day: "Saturday",
+                    time: "10:00 AM - 2:00 PM"
+                }
+            ]
+        },
+
+        {
+            name: "Dr. Arjun Kapoor",
+            image: "../images/doctors5.jpg",
+            speciality: "orthopedics",
+            specialityName: "Orthopedic Specialist",
+            clinic: "Ortho Care Hospital New Delhi, Delhi",
+            location: "New Delhi, Delhi",
+            experience: 9,
+            rating: 4.7,
+            reviews: 87,
+            slots: ["09:00 AM", "12:00 PM", "03:30 PM"],
+
+            description:
+                "Dr. Arjun Kapoor provides orthopedic care for bones, joints, muscles and sports-related injuries.",
+
+            specializations: [
+                "Orthopedics",
+                "Joint Care",
+                "Sports Injuries",
+                "Bone Health"
+            ],
+
+            about:
+                "Dr. Arjun Kapoor focuses on orthopedic treatment for joint, bone and muscle conditions and helps patients improve mobility.",
+
+            education: [
+                {
+                    degree: "MBBS",
+                    college: "Maulana Azad Medical College"
+                },
+                {
+                    degree: "MS - Orthopedics",
+                    college: "Delhi Medical University"
+                }
+            ],
+
+            availability: [
+                {
+                    day: "Monday",
+                    time: "9:00 AM - 1:00 PM"
+                },
+                {
+                    day: "Wednesday",
+                    time: "12:00 PM - 4:00 PM"
+                },
+                {
+                    day: "Friday",
+                    time: "3:30 PM - 7:30 PM"
+                }
+            ]
+        },
+
+        {
+            name: "Dr. Neha Verma",
+            image: "../images/doctors8.jpg",
+            speciality: "dermatology",
+            specialityName: "Dermatologist",
+            clinic: "Skin Care Clinic Hyderabad, Telangana",
+            location: "Hyderabad, Telangana",
+            experience: 6,
+            rating: 4.8,
+            reviews: 96,
+            slots: ["09:30 AM", "12:30 PM", "04:00 PM"],
+
+            description:
+                "Dr. Neha Verma provides personalized skin and hair care using modern dermatological treatment methods.",
+
+            specializations: [
+                "Skin Care",
+                "Acne Treatment",
+                "Hair Care",
+                "Cosmetic Dermatology"
+            ],
+
+            about:
+                "Dr. Neha Verma provides dermatology care for common skin and hair conditions with a focus on personalized treatment.",
+
+            education: [
+                {
+                    degree: "MBBS",
+                    college: "Osmania Medical College"
+                },
+                {
+                    degree: "MD - Dermatology",
+                    college: "Hyderabad Medical University"
+                }
+            ],
+
+            availability: [
+                {
+                    day: "Monday",
+                    time: "9:30 AM - 1:30 PM"
+                },
+                {
+                    day: "Thursday",
+                    time: "12:30 PM - 4:30 PM"
+                },
+                {
+                    day: "Saturday",
+                    time: "10:00 AM - 2:00 PM"
+                }
+            ]
+        },
+
+        {
+            name: "Dr. Kanika Garg",
+            image: "../images/doctors9.jpg",
+            speciality: "gynecology",
+            specialityName: "Gynecologist",
+            clinic: "Women's Care Hospital Jaipur, Rajasthan",
+            location: "Jaipur, Rajasthan",
+            experience: 12,
+            rating: 4.5,
+            reviews: 129,
+            slots: ["10:00 AM", "01:00 PM", "04:00 PM"],
+
+            description:
+                "Dr. Kanika Garg provides comprehensive women's healthcare with a focus on reproductive and general health.",
+
+            specializations: [
+                "Women's Health",
+                "Gynecology",
+                "Pregnancy Care",
+                "Reproductive Health"
+            ],
+
+            about:
+                "Dr. Kanika Garg provides women's healthcare and gynecological consultation with a focus on personalized and preventive care.",
+
+            education: [
+                {
+                    degree: "MBBS",
+                    college: "SMS Medical College Jaipur"
+                },
+                {
+                    degree: "MD - Gynecology",
+                    college: "Rajasthan Medical University"
+                }
+            ],
+
+            availability: [
+                {
+                    day: "Monday",
+                    time: "10:00 AM - 2:00 PM"
+                },
+                {
+                    day: "Wednesday",
+                    time: "1:00 PM - 5:00 PM"
+                },
+                {
+                    day: "Friday",
+                    time: "4:00 PM - 8:00 PM"
+                }
+            ]
+        },
+
+        {
+            name: "Dr. Ankush Sharma",
+            image: "../images/doctors10.jpg",
+            speciality: "ent",
+            specialityName: "ENT Specialist",
+            clinic: "ENT Care Hospital Pune, Maharashtra",
+            location: "Pune, Maharashtra",
+            experience: 9,
+            rating: 4.9,
+            reviews: 89,
+            slots: ["09:30 AM", "12:30 PM", "04:00 PM"],
+
+            description:
+                "Dr. Ankush Sharma provides specialized care for ear, nose and throat conditions.",
+
+            specializations: [
+                "ENT Care",
+                "Ear Problems",
+                "Nose Treatment",
+                "Throat Care"
+            ],
+
+            about:
+                "Dr. Ankush Sharma specializes in ENT care and provides diagnosis and treatment for common ear, nose and throat conditions.",
+
+            education: [
+                {
+                    degree: "MBBS",
+                    college: "Pune Medical College"
+                },
+                {
+                    degree: "MS - ENT",
+                    college: "Maharashtra Medical University"
+                }
+            ],
+
+            availability: [
+                {
+                    day: "Tuesday",
+                    time: "9:30 AM - 1:30 PM"
+                },
+                {
+                    day: "Thursday",
+                    time: "12:30 PM - 4:30 PM"
+                },
+                {
+                    day: "Saturday",
+                    time: "10:00 AM - 2:00 PM"
+                }
+            ]
+        },
+
+        {
+            name: "Dr. Poornima Mehta",
+            image: "../images/doctors11.jpg",
+            speciality: "ophthalmology",
+            specialityName: "Ophthalmologist",
+            clinic: "Vision Care Hospital Chennai, Tamil Nadu",
+            location: "Chennai, Tamil Nadu",
+            experience: 8,
+            rating: 4.6,
+            reviews: 69,
+            slots: ["09:00 AM", "12:00 PM", "03:30 PM"],
+
+            description:
+                "Dr. Poornima Mehta provides comprehensive eye care and treatment for common vision and eye-related conditions.",
+
+            specializations: [
+                "Eye Care",
+                "Vision Checkup",
+                "Eye Treatment",
+                "General Ophthalmology"
+            ],
+
+            about:
+                "Dr. Poornima Mehta provides ophthalmology consultation and routine eye care with a focus on maintaining healthy vision.",
+
+            education: [
+                {
+                    degree: "MBBS",
+                    college: "Madras Medical College"
+                },
+                {
+                    degree: "MS - Ophthalmology",
+                    college: "Chennai Medical University"
+                }
+            ],
+
+            availability: [
+                {
+                    day: "Monday",
+                    time: "9:00 AM - 1:00 PM"
+                },
+                {
+                    day: "Wednesday",
+                    time: "12:00 PM - 4:00 PM"
+                },
+                {
+                    day: "Saturday",
+                    time: "10:00 AM - 2:00 PM"
+                }
+            ]
         }
     ];

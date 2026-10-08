@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Doctor Dashboard | CarePlus</title>
+
+    <link rel="stylesheet" href="../CSS/doctor-dashboard.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <i class="fa-solid fa-heart"></i>
+
+            <div class="plus">
+                <i class="fa-solid fa-plus"></i>
+            </div>
+
+            <h2>Care</h2>
+            <span>Plus</span>
+        </div>
+
+        <div class="doctor-info">
+
+            <div class="doctor-avatar">
+                <i class="fa-solid fa-user-doctor"></i>
+            </div>
+
+            <h3 id="doctorName">Doctor</h3>
+
+            <p>Doctor</p>
+
+        </div>
+
+        <nav class="sidebar-nav">
+
+            <a href="./doctor-dashboard.html" class="active">
+                <i class="fa-solid fa-house"></i>
+                Dashboard
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-calendar-check"></i>
+                Appointments
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-user"></i>
+                My Profile
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-users"></i>
+                Patients
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-message"></i>
+                Messages
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-gear"></i>
+                Settings
+            </a>
+
+        </nav>
+
+        <a href="./home.html" class="back-home">
+            <i class="fa-solid fa-arrow-left"></i>
+            Back to Website
+        </a>
+
+    </aside>
+
+
+    <!-- Main Content -->
+    <main class="main">
+
+        <!-- Topbar -->
+        <header class="topbar">
+
+            <div>
+                <p class="small-text">Doctor Dashboard</p>
+
+                <h1>
+                    Good Morning,
+                    <span id="welcomeDoctorName">Doctor</span>
+                    👋
+                </h1>
+            </div>
+
+            <div class="top-profile">
+
+                <div class="notification">
+                    <i class="fa-solid fa-bell"></i>
+                    <span>3</span>
+                </div>
+
+                <div class="profile-avatar">
+                    <i class="fa-solid fa-user-doctor"></i>
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- Statistics -->
+        <section class="stats">
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    <i class="fa-solid fa-calendar-check"></i>
+                </div>
+
+                <div>
+                    <p>Today's Appointments</p>
+                    <h2>8</h2>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    <i class="fa-solid fa-users"></i>
+                </div>
+
+                <div>
+                    <p>Total Patients</p>
+                    <h2>124</h2>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    <i class="fa-solid fa-user-plus"></i>
+                </div>
+
+                <div>
+                    <p>New Patients</p>
+                    <h2>12</h2>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    <i class="fa-solid fa-star"></i>
+                </div>
+
+                <div>
+                    <p>Rating</p>
+                    <h2>4.9</h2>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Today's Appointments -->
+        <section class="appointments-section">
+
+            <div class="section-header">
+
+                <div>
+                    <p class="section-label">TODAY</p>
+                    <h2>Today's Appointments</h2>
+                </div>
+
+                <a href="#">View All</a>
+
+            </div>
+
+
+            <div class="appointment-table">
+
+                <div class="table-header">
+
+                    <span>Patient</span>
+                    <span>Time</span>
+                    <span>Type</span>
+                    <span>Status</span>
+
+                </div>
+
+
+                <div class="appointment-row">
+
+                    <div class="patient">
+
+                        <div class="patient-avatar">
+                            A
+                        </div>
+
+                        <div>
+                            <h4>Aarav Sharma</h4>
+                            <p>General Consultation</p>
+                        </div>
+
+                    </div>
+
+                    <p>10:00 AM</p>
+
+                    <p>Video Call</p>
+
+                    <span class="status confirmed">
+                        Confirmed
+                    </span>
+
+                </div>
+
+
+                <div class="appointment-row">
+
+                    <div class="patient">
+
+                        <div class="patient-avatar">
+                            R
+                        </div>
+
+                        <div>
+                            <h4>Riya Mehta</h4>
+                            <p>Follow-up</p>
+                        </div>
+
+                    </div>
+
+                    <p>11:30 AM</p>
+
+                    <p>In Clinic</p>
+
+                    <span class="status confirmed">
+                        Confirmed
+                    </span>
+
+                </div>
+
+
+                <div class="appointment-row">
+
+                    <div class="patient">
+
+                        <div class="patient-avatar">
+                            K
+                        </div>
+
+                        <div>
+                            <h4>Karan Singh</h4>
+                            <p>Heart Checkup</p>
+                        </div>
+
+                    </div>
+
+                    <p>02:00 PM</p>
+
+                    <p>In Clinic</p>
+
+                    <span class="status pending">
+                        Pending
+                    </span>
+
+                </div>
+
+
+                <div class="appointment-row">
+
+                    <div class="patient">
+
+                        <div class="patient-avatar">
+                            N
+                        </div>
+
+                        <div>
+                            <h4>Neha Gupta</h4>
+                            <p>Consultation</p>
+                        </div>
+
+                    </div>
+
+                    <p>04:00 PM</p>
+
+                    <p>Video Call</p>
+
+                    <span class="status confirmed">
+                        Confirmed
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Bottom Section -->
+        <section class="bottom-section">
+
+
+            <!-- Recent Patients -->
+            <div class="card">
+
+                <div class="card-header">
+
+                    <div>
+                        <p class="section-label">PATIENTS</p>
+                        <h2>Recent Patients</h2>
+                    </div>
+
+                    <a href="#">View All</a>
+
+                </div>
+
+
+                <div class="recent-patient">
+
+                    <div class="patient-avatar">
+                        A
+                    </div>
+
+                    <div>
+                        <h4>Aarav Sharma</h4>
+                        <p>Last visit: Today</p>
+                    </div>
+
+                </div>
+
+
+                <div class="recent-patient">
+
+                    <div class="patient-avatar">
+                        R
+                    </div>
+
+                    <div>
+                        <h4>Riya Mehta</h4>
+                        <p>Last visit: Yesterday</p>
+                    </div>
+
+                </div>
+
+
+                <div class="recent-patient">
+
+                    <div class="patient-avatar">
+                        K
+                    </div>
+
+                    <div>
+                        <h4>Karan Singh</h4>
+                        <p>Last visit: 2 days ago</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Quick Actions -->
+            <div class="card">
+
+                <div class="card-header">
+
+                    <div>
+                        <p class="section-label">QUICK ACTIONS</p>
+                        <h2>What would you like to do?</h2>
+                    </div>
+
+                </div>
+
+
+                <div class="quick-actions">
+
+                    <a href="#">
+                        <i class="fa-solid fa-calendar-plus"></i>
+                        <span>Manage Appointments</span>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Update Profile</span>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-solid fa-message"></i>
+                        <span>View Messages</span>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-solid fa-clock"></i>
+                        <span>Update Availability</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="../JS/doctor-dashboard.js"></script>
+
+    <script src="../JS/navbar.js"></script>
+
+</body>
+
+</html>

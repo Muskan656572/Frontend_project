@@ -77,11 +77,11 @@
         <div class="search-bar">
             <div class="search">
                 <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="text" placeholder="Search by name, specialty, or location">
+                <input id="searchInput" type="text" placeholder="Search by name, specialty, or location">
             </div>
             <div class="speciality">
                 <i class="fa-solid fa-user-group"></i>
-                <select>
+                <select id="specialitySelect">
                     <option value="">Speciality</option>
                     <option value="cardiology">Cardiology</option>
                     <option value="dermatology">Dermatology</option>
@@ -90,14 +90,14 @@
                     <option value="orthopedics">Orthopedics</option>
                     <option value="gynecology">Gynecology</option>
                     <option value="ophthalmology">Ophthalmology</option>
-                    <option value="dentistry">Dentistry</option>
+                    <option value="dental">Dentistry</option>
                     <option value="psychiatry">Psychiatry</option>
                     <option value="general">General Medicine</option>
-                    <option value="ENT">ENT</option>
+                    <option value="ent">ENT</option>
                 </select>
                 <span>⌄</span>
             </div>
-            <div class="loc">
+            <div class="loc" id="locationSelect">
                 <i class="fa-solid fa-location-dot"></i>
                 <select>
                     <option value="">Location</option>
@@ -112,7 +112,7 @@
                 </select>
                 <span>⌄</span>
             </div>
-            <div class="exp">
+            <div class="exp" id="experienceSelect">
                 <i class="fa-solid fa-star"></i>
                 <select>
                     <option value="">Experience</option>
@@ -124,7 +124,7 @@
                 <span>⌄</span>
             </div>
             
-            <button class="search-btn"><i class="fa-solid fa-search"></i>Search</button>
+            <button id="search-btn" class="search-btn"><i class="fa-solid fa-search"></i>Search</button>
         </div>
 
         <div class="frow">
@@ -398,30 +398,6 @@
             </div>
         </div>
 
-        <div class="lrow">
-            <div class="left">
-                <
-            </div>
-            <div class="one">
-                1
-            </div>
-            <div class="two">
-                2
-            </div>
-            <div class="three">
-                3
-            </div>
-            <div class="four">
-
-                4
-            </div>
-            <div class="five">
-                5
-            </div>
-            <div class="right">
-                >
-            </div>
-        </div>
     </section>
     <footer class="foot">
         <div class="footer">
@@ -512,6 +488,8 @@
         <span></span>
         <p>Terms & Conditions</p>
     </div>
+    <script src="../JS/doctor-data.js"></script>
+    <script src="../JS/doctors.js"></script>
     <script src="../JS/navbar.js"></script>
 </body>
 </html>

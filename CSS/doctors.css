@@ -577,47 +577,7 @@ input:focus {
     border-radius: 20px;
     border:2px solid rgba(128, 128, 128, 0.204);
 }
-.lrow{
-    height:100px;
-    width:470px;
-    display: flex;
-    gap:20px;
-    justify-content: center;
-    margin-left: 550px;
-    margin-top: 15px;
-    
-}
-.left,
-.one,
-.two,
-.three,
-.four,
-.five,
-.right{
-    height: 40px;
-    width: 40px;
-    border-radius: 10px;
-    font-size:18px;
-    color:#18335d;
-    font-weight: 600;
-    background-color: #e2dbfcbf;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    margin-top: 25px;
-    border:2px solid rgba(128, 128, 128, 0.204);
-    cursor: pointer;
-}
-.left:hover{background-color: #6853c8;}
-.one:hover{background-color: #6853c8;}
-.two:hover{background-color: #6853c8;}
-.three:hover{background-color: #6853c8;}
-.four:hover{background-color: #6853c8;}
-.five:hover{background-color: #6853c8;}
-.right:hover{
-    background-color: #6853c8;
 
-}
 .foot {
     width: 100%;
     min-height: 380px;
