@@ -66,20 +66,14 @@
                     Find Doctors
                 </a>
 
-                <a href="medical-history.html">
-                    <i class="fa-solid fa-file-medical"></i>
-                    Medical History
-                </a>
+                
 
 
 
             </nav>
 
 
-            <a href="home.html" class="logout">
-                <i class="fa-solid fa-right-from-bracket"></i>
-                Logout
-            </a>
+            
 
         </aside>
 
@@ -137,7 +131,7 @@
 
                     <div>
                         <p>Upcoming Appointments</p>
-                        <h2>2</h2>
+                        <h2 id="upcomingAppointmentsCount">2</h2>
                     </div>
 
                 </div>
@@ -151,7 +145,7 @@
 
                     <div>
                         <p>Doctors Visited</p>
-                        <h2>5</h2>
+                        <h2 id="doctorsVisitedCount">5</h2>
                     </div>
 
                 </div>
@@ -165,7 +159,7 @@
 
                     <div>
                         <p>Medical Records</p>
-                        <h2>8</h2>
+                        <h2 id="medicalRecordsCount">8</h2>
                     </div>
 
                 </div>
@@ -206,38 +200,8 @@
                     </div>
 
 
-                    <div class="doctor-appointment">
-
-                        <img src="../images/doctors2.jpg"
-                            alt="Doctor">
-
-                        <div class="appointment-info">
-
-                            <h3>Dr. Priya Sharma</h3>
-
-                            <p>Cardiologist</p>
-
-                            <div class="appointment-details">
-
-                                <span>
-                                    <i class="fa-solid fa-calendar"></i>
-                                    20 September
-                                </span>
-
-                                <span>
-                                    <i class="fa-solid fa-clock"></i>
-                                    10:00 AM
-                                </span>
-
-                            </div>
-
-                        </div>
-
-
-                        <span class="status">
-                            Confirmed
-                        </span>
-
+                    <div class="doctor-appointment" id="upcomingAppointmentDetails">
+                        <p>No upcoming appointments yet.</p>
                     </div>
 
                 </div>
@@ -325,42 +289,8 @@
                     </div>
 
 
-                    <div class="table-row">
-
-                        <span>Dr. Sarah Sharma</span>
-                        <span>Cardiology</span>
-                        <span>10 Sept 2026</span>
-
-                        <span class="completed">
-                            Completed
-                        </span>
-
-                    </div>
-
-
-                    <div class="table-row">
-
-                        <span>Dr. Rahul Mehta</span>
-                        <span>Neurology</span>
-                        <span>05 Sept 2026</span>
-
-                        <span class="completed">
-                            Completed
-                        </span>
-
-                    </div>
-
-
-                    <div class="table-row">
-
-                        <span>Dr. Priya Singh</span>
-                        <span>Pediatrics</span>
-                        <span>28 Aug 2026</span>
-
-                        <span class="completed">
-                            Completed
-                        </span>
-
+                    <div id="recentAppointmentsList">
+                        <p>No appointments booked yet.</p>
                     </div>
 
                 </div>

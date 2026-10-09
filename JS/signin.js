@@ -1,22 +1,20 @@
+
 const signupForm = document.getElementById("signupForm");
 
 signupForm.addEventListener("submit", function(event) {
 
-    event.preventDefault();  // to prevent page reload on form submission
+    event.preventDefault();
 
-    // Get values
     const name = document.getElementById("name").value.trim();
-    const email = document.getElementById("email").value.trim();
+    const email = document.getElementById("email").value.trim().toLowerCase();
     const password = document.getElementById("password").value;
     const confirmPassword = document.getElementById("confirmPassword").value;
     const role = document.getElementById("role").value;
 
     const errorMessage = document.getElementById("error-message");
 
-    // Clear old error
     errorMessage.textContent = "";
 
-    // Validation
     if (name === "") {
         errorMessage.textContent = "Please enter your full name.";
         return;
@@ -26,10 +24,11 @@ signupForm.addEventListener("submit", function(event) {
         errorMessage.textContent = "Please enter your email address.";
         return;
     }
+
     const emailPattern = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
 
     if (!emailPattern.test(email)) {
-        errorMessage.textContent = "Please enter a valid email address.";
+        errorMessage.textContent = "Please enter a valid Gmail address.";
         return;
     }
 
@@ -53,20 +52,39 @@ signupForm.addEventListener("submit", function(event) {
         return;
     }
 
-    // Create user
+    // Get all registered accounts
+    const users = JSON.parse(
+        localStorage.getItem("careplusUsers")
+    ) || [];
+
+    // Prevent duplicate email registration
+    const existingUser = users.find(function(item) {
+        return item.email.toLowerCase() === email;
+    });
+
+    if (existingUser) {
+        errorMessage.textContent = "This email is already registered. Please login.";
+        return;
+    }
+
+    // Create account
     const user = {
+        id: Date.now(),
         name: name,
         email: email,
         password: password,
         role: role
     };
 
-    // Save user
-    localStorage.setItem("careplusUser", JSON.stringify(user));
+    // Save without replacing other accounts
+    users.push(user);
 
-    // Success
+    localStorage.setItem(
+        "careplusUsers",
+        JSON.stringify(users)
+    );
+
     alert("Account created successfully!");
 
-    // Go to login
-    window.location.href = "login.html";
+    window.location.href = "./login.html";
 });

@@ -58,6 +58,12 @@ const appointmentForm = document.getElementById("appointmentForm");
 appointmentForm.addEventListener("submit", function(event) {
 
     event.preventDefault();
+    const error = document.getElementById("appointmentError");
+    error.textContent = "";
+    if (!doctor) {
+        error.textContent = "Please select a valid doctor.";
+        return;
+    }
 
     const name = document.getElementById("patientName").value.trim();
 
@@ -71,9 +77,8 @@ appointmentForm.addEventListener("submit", function(event) {
 
     const reason = document.getElementById("appointmentReason").value.trim();
 
-    const error = document.getElementById("appointmentError");
 
-    error.textContent = "";
+    
 
 
     if (name === "") {
@@ -113,6 +118,10 @@ appointmentForm.addEventListener("submit", function(event) {
 
         doctor: doctor.name,
 
+        doctorEmail: doctor.email || "",
+        
+        doctorImage: doctor.image || "",
+
         speciality: doctor.specialityName,
 
         patientName: name,
@@ -127,7 +136,7 @@ appointmentForm.addEventListener("submit", function(event) {
 
         reason: reason,
 
-        status: "Confirmed"
+        status: "pending"
     };
 
 

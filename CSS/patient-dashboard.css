@@ -473,7 +473,9 @@ body {
 .recent {
     margin-bottom: 25px;
 }
-
+#recentAppointmentsList{
+    margin-top: 20px;
+}
 .appointment-table {
     width: 100%;
 }

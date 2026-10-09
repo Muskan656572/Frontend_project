@@ -1,50 +1,52 @@
+
 const loginForm = document.getElementById("loginForm");
 
 loginForm.addEventListener("submit", function(event) {
-
     event.preventDefault();
 
     const email = document.getElementById("email").value.trim();
     const password = document.getElementById("password").value;
-
     const errorMessage = document.getElementById("error-message");
 
     errorMessage.textContent = "";
 
-    // Email validation
     if (email === "") {
         errorMessage.textContent = "Please enter your email address.";
         return;
     }
 
-    // Password validation
     if (password === "") {
         errorMessage.textContent = "Please enter your password.";
         return;
     }
 
-    // Get saved user
-    const savedUser = localStorage.getItem("careplusUser");
+    // Get all registered accounts
+    const users = JSON.parse(
+        localStorage.getItem("careplusUsers")
+    ) || [];
 
-    if (savedUser === null) {
-        errorMessage.textContent = "No account found. Please sign up first.";
-        return;
-    }
+    // Find the account matching the entered email and password
+    const user = users.find(function(item) {
+        return item.email.toLowerCase() === email.toLowerCase()
+            && item.password === password;
+    });
 
-    // Convert JSON string into object
-    const user = JSON.parse(savedUser);
-
-    // Check email and password
-    if (email !== user.email || password !== user.password) {
+    if (!user) {
         errorMessage.textContent = "Invalid email or password.";
         return;
     }
 
-    // Login successful
+    // Save the currently logged-in account
+    localStorage.setItem("careplusUser", JSON.stringify(user));
     localStorage.setItem("careplusLoggedIn", "true");
 
     alert("Login successful!");
 
-    window.location.href = "home.html"; // Redirect to dashboard
-
+    if (user.role === "patient") {
+        window.location.href = "./patient-dashboard.html";
+    } else if (user.role === "doctor") {
+        window.location.href = "./doctor-dashboard.html";
+    } else {
+        window.location.href = "./home.html";
+    }
 });
