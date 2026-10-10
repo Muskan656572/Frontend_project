@@ -694,3 +694,795 @@
     height: 15px;
     background-color: #8eb2ec;
 }
+
+
+/* ===== CONTACT ALIGNMENT FIX ===== */
+
+@media (min-width: 901px) and (max-width: 1100px) {
+
+    .navbar {
+        height: 80px;
+        gap: 40px;
+        padding: 0 20px;
+        justify-content: center;
+    }
+
+    .nav-user {
+        top: 20px;
+        right: 70px;
+    }
+
+    .section1 {
+        width: 100%;
+        height: auto;
+        min-height: 800px;
+        padding: 45px 20px;
+        display: grid;
+        grid-template-columns: repeat(2,minmax(0,1fr));
+        align-items: center;
+        gap: 25px;
+        overflow: hidden;
+    }
+
+    .section1 > img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+    }
+
+    .form,
+    .info {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        width: 960px;
+        max-width: none;
+        min-width: 0;
+        margin: 0;
+        box-sizing: border-box;
+        margin-left: 20px;
+        z-index: 1;
+    }
+
+    .form {
+        /* margin-left: -10px; */
+        /* margin-right: 10px;; */
+        width:970px;
+        height: auto;
+        min-height: 540px;
+        padding: 25px 18px;
+        margin-top: 25px;
+        
+    }
+    .info{
+        margin-left:-15px;
+    }
+    .circle {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .form h1 {
+        font-size: 28px;
+    }
+
+    .one,
+    .two,
+    .three {
+        gap: 10px;
+        align-items: flex-start;
+    }
+
+    .one p,
+    .two p,
+    .three p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .addresss p,
+    .phones p,
+    .emails p {
+        font-size: 15px;
+        overflow-wrap: anywhere;
+    }
+
+    .info {
+        height: auto;
+        min-height: 650px;
+        padding: 22px 18px;
+        overflow: hidden;
+    }
+
+    .info h1 {
+        font-size: 26px;
+        text-align: center;
+        line-height: 1.3;
+    }
+
+    #contactForm {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .input-box {
+        width: 100%;
+        padding: 12px 0 0;
+    }
+
+    .input-box input {
+        width: 100%;
+        height: 48px;
+        margin: 0;
+        padding: 0 10px 0 42px;
+    }
+
+    .input-box i {
+        left: 14px;
+        top: 36px;
+        margin: 0;
+    }
+
+    .text {
+        width: 100%;
+        height: 140px;
+        padding: 15px 0 0;
+    }
+
+    .text textarea {
+        width: 100%;
+        height: 125px;
+        margin: 0;
+        padding: 15px 10px 10px 42px;
+    }
+
+    .text i {
+        left: 14px;
+        top: 40px;
+        margin: 0;
+    }
+
+    .send-btn {
+        width: 100%;
+        height: 48px;
+        margin: 28px 0 0;
+        font-size: 15px;
+    }
+
+    .footer {
+        gap: 15px;
+    }
+
+    .links {
+        width: 28%;
+    }
+
+    .quick,
+    .serv,
+    .contact {
+        width: 19%;
+        min-width: 0;
+    }
+
+    .txt {
+        width: 100%;
+        overflow-wrap: anywhere;
+    }
+
+    .quick a,
+    .serv a {
+        line-height: 1.6;
+        overflow-wrap: anywhere;
+    }
+
+    .linee {
+        flex-shrink: 0;
+    }
+}
+
+@media (max-width: 900px) {
+
+    @media (max-width: 900px) {
+    .navbar {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 10px 65px 10px 12px;
+        position: relative;
+        box-sizing: border-box;
+    }
+
+    .nav-user {
+        position: absolute;
+        top: 50%;
+        right: 52px;
+        transform: translateY(-50%);
+        margin: 0;
+        z-index: 1000;
+    }
+
+    .user-menu {
+        position: relative;
+    }
+
+    .user-letter {
+        width: 38px;
+        height: 38px;
+        flex-shrink: 0;
+    }
+
+    .dropdown {
+        right: 0;
+        left: auto;
+        max-width: calc(100vw - 24px);
+    }
+}
+    /* .user-letter{
+        position: absolute;
+        left:-150px;
+    } */
+    .section1 {
+        width: 100%;
+        height: auto;
+        min-height: 0;
+        padding: 40px 15px 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        overflow: hidden;
+    }
+
+    .section1 > img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+    }
+
+    .form,
+    .info {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        margin: 0;
+        width: 100%;
+        max-width: 500px;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+
+    /* Contact details */
+    .form {
+        height: auto;
+        min-height: 540px;
+        margin-top: 35px;
+        padding: 25px;
+    }
+
+    .circle {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .form h1 {
+        font-size: clamp(26px, 4vw, 35px);
+        overflow-wrap: anywhere;
+    }
+
+    .one,
+    .two,
+    .three {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .one p,
+    .two p,
+    .three p {
+        font-size: 17px;
+        line-height: 1.5;
+    }
+
+    .addresss p,
+    .phones p,
+    .emails p {
+        font-size: 16px;
+        overflow-wrap: anywhere;
+    }
+
+    /* Contact form */
+    .info {
+        height: auto;
+        min-height: 0;
+        padding: 25px 20px 30px;
+        gap: 10px;
+        overflow: hidden;
+    }
+
+    .info h1 {
+        font-size: clamp(24px, 4vw, 32px);
+        text-align: center;
+        line-height: 1.3;
+    }
+
+    #contactForm {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .input-box {
+        position: relative;
+        width: 100%;
+        padding: 12px 0 0;
+        box-sizing: border-box;
+    }
+
+    .input-box input {
+        display: block;
+        width: 100%;
+        height: 50px;
+        margin: 0;
+        padding: 0 12px 0 42px;
+        box-sizing: border-box;
+    }
+
+    .input-box i {
+        position: absolute;
+        left: 14px;
+        top: 37px;
+        margin: 0;
+        transform: translateY(-50%);
+        font-size: 17px;
+    }
+
+    .text {
+        position: relative;
+        width: 100%;
+        height: 150px;
+        padding: 15px 0 0;
+        box-sizing: border-box;
+    }
+
+    .text textarea {
+        display: block;
+        width: 100%;
+        height: 130px;
+        margin: 0;
+        padding: 16px 12px 12px 42px;
+        box-sizing: border-box;
+    }
+
+    .text i {
+        position: absolute;
+        left: 14px;
+        top: 40px;
+        margin: 0;
+        transform: none;
+        font-size: 17px;
+    }
+
+    .input-box input::placeholder,
+    .text textarea::placeholder {
+        font-size: 15px;
+    }
+
+    .send-btn {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: 50px;
+        margin: 25px 0 0;
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+
+    .info p {
+        overflow-wrap: anywhere;
+    }
+
+    /* Footer */
+    .quick{
+        margin-left:95px;
+    }
+    .serv{
+        margin-left:-10px;
+    }
+    .linee{
+        display: none;
+    }
+    .copyright {
+        margin-left: 20px;
+        padding-left: 0;
+    }
+
+    .privacy {
+        margin-right: 20px;
+        padding-left: 0;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        height: auto;
+        min-height: 70px;
+        padding: 12px;
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    .nav-user {
+        position: relative;
+        top: 20px;
+        right: auto;
+    }
+
+    .form {
+        padding: 25px 20px;
+    }
+
+    .form h1 {
+        font-size: 29px;
+    }
+
+    .one,
+    .two,
+    .three {
+        gap: 10px;
+        align-items: flex-start;
+    }
+
+    .one p,
+    .two p,
+    .three p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .info {
+        padding: 20px 15px;
+        min-height: 0;
+    }
+
+    .text {
+        height: 130px;
+    }
+
+    .text textarea {
+        height: 130px;
+    }
+
+    .input-box input::placeholder,
+    .text textarea::placeholder {
+        font-size: 14px;
+    }
+
+    .addresss p,
+    .phones p,
+    .emails p {
+        font-size: 16px;
+        overflow-wrap: anywhere;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+
+    .links,
+    .quick,
+    .serv,
+    .contact {
+        width: 100%;
+    }
+    .quick{
+        margin-left:0px;
+    }
+    .linee {
+        display: none;
+    }
+
+    .lline {
+        margin-top: 25px;
+    }
+
+    .copyright,
+    .privacy {
+        margin: 15px 10px;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 400px) {
+
+    .navbar {
+        height: auto;
+        min-height: 65px;
+        padding: 12px 8px;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .navbar > a {
+        font-size: 13px;
+    }
+
+    .nav-user {
+        position: relative;
+        top: 20px;
+        right: auto;
+    }
+
+    .nav-user .btn {
+        width: 85px;
+        height: 36px;
+        font-size: 14px;
+    }
+
+    .section1 {
+        height: auto;
+        min-height: 0;
+        padding: 40px 10px 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 22px;
+        overflow: hidden;
+    }
+
+    .section1 > img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+    }
+
+    .form,
+    .info {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        width: 100%;
+        max-width: 380px;
+        min-width: 0;
+        margin: 0;
+    }
+
+    .form {
+        height: auto;
+        min-height: 0;
+        margin-top: 25px;
+        padding: 22px 14px;
+    }
+
+    .circle {
+        width: 85px;
+        height: 85px;
+        top: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .circle1 {
+        width: 71px;
+        height: 71px;
+        top: 7px;
+        left: 7px;
+    }
+
+    .circle1 h2 {
+        top: 5px;
+        left: 19px;
+        font-size: 50px;
+    }
+
+    .form h1 {
+        margin-top: 42px;
+        margin-bottom: 18px;
+        font-size: 25px;
+        line-height: 1.2;
+    }
+
+    .one,
+    .two,
+    .three {
+        gap: 9px;
+        align-items: flex-start;
+    }
+
+    .one p,
+    .two p,
+    .three p {
+        font-size: 15px;
+        line-height: 1.45;
+        overflow-wrap: anywhere;
+    }
+
+    .one i,
+    .two i,
+    .three i {
+        font-size: 17px;
+        flex-shrink: 0;
+    }
+
+    .addresss,
+    .phones,
+    .emails {
+        gap: 8px;
+        margin-top: 16px;
+    }
+
+    .addresss p,
+    .phones p,
+    .emails p {
+        font-size: 14px;
+        line-height: 1.45;
+        overflow-wrap: anywhere;
+    }
+
+    .addresss i,
+    .phones i,
+    .emails i {
+        font-size: 19px;
+        flex-shrink: 0;
+    }
+
+    .socials {
+        gap: 10px;
+        margin-left: 0;
+        flex-wrap: wrap;
+    }
+
+    .socials div {
+        width: 35px;
+        height: 35px;
+    }
+
+    .info {
+        height: auto;
+        min-height: 0;
+        padding: 20px 12px 25px;
+        gap: 8px;
+        overflow: hidden;
+    }
+
+    .info h1 {
+        font-size: 23px;
+        text-align: center;
+        line-height: 1.3;
+    }
+
+    #contactForm {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .input-box {
+        width: 100%;
+        padding: 12px 0 0;
+    }
+
+    .input-box input {
+        width: 100%;
+        height: 46px;
+        margin: 0;
+        padding: 0 10px 0 40px;
+        font-size: 14px;
+    }
+
+    .input-box input::placeholder,
+    .text textarea::placeholder {
+        font-size: 13px;
+    }
+
+    .input-box i {
+        left: 13px;
+        top: 35px;
+        margin-left: 0;
+        font-size: 15px;
+    }
+
+    .text {
+        width: 100%;
+        height: 125px;
+        padding: 15px 0 0;
+    }
+
+    .text textarea {
+        width: 100%;
+        height: 110px;
+        margin: 0;
+        padding: 14px 10px 10px 38px;
+        font-size: 14px;
+    }
+
+    .text i {
+        left: 13px;
+        top: 40px;
+        margin-left: 0;
+        font-size: 15px;
+    }
+
+    .send-btn {
+        width: 100%;
+        height: 46px;
+        margin: 25px 0 0;
+        font-size: 14px;
+    }
+
+    .info p,
+    .info .log {
+        font-size: 15px;
+        overflow-wrap: anywhere;
+    }
+
+    .info .log {
+        margin-top: 0;
+    }
+
+    .foot {
+        padding: 25px 15px;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .links,
+    .quick,
+    .serv,
+    .contact {
+        width: 100%;
+    }
+
+    .txt {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .logo h2,
+    .logo span {
+        font-size: 27px;
+    }
+
+    .logo i {
+        font-size: 38px;
+    }
+
+    .links .hlt {
+        margin-left: 50px;
+    }
+
+    .linee {
+        display: none;
+    }
+
+    .lline {
+        margin-top: 0;
+    }
+
+    .copyright,
+    .privacy {
+        margin: 15px;
+        padding: 0;
+        font-size: 12px;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+}
+

@@ -783,3 +783,416 @@ input:focus {
     height: 15px;
     background-color: #8eb2ec;
 }
+
+
+/* ================= RESPONSIVE DESIGN ================= */
+
+
+/* Laptop aur tablet */
+@media (max-width: 1200px) {
+    .navbar {
+        gap: 30px;
+    }
+
+    .nav-user {
+        right: 25px;
+    }
+
+    .text1 {
+        margin-left: 8%;
+    }
+
+    .container1 h1,
+    .container1 h2,
+    .container1 p {
+        margin-left: 8%;
+    }
+
+    .search-bar {
+        width: 92%;
+        height: auto;
+        margin: 0 auto;
+        padding: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .search,
+    .speciality,
+    .loc,
+    .exp {
+        flex: 1 1 200px;
+        width: auto;
+        margin: 0;
+    }
+
+    .search input {
+        width: 100%;
+        top: 0;
+    }
+
+    .search i {
+        top: 12px;
+    }
+
+    .speciality select,
+    .loc select,
+    .exp select {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .speciality i,
+    .loc i,
+    .exp i {
+        top: 12px;
+    }
+
+    .speciality span,
+    .loc span,
+    .exp span {
+        top: 3px;
+        right: 12px;
+        left: auto;
+    }
+
+    .search-btn {
+        margin: 0;
+        align-self: center;
+        flex: 0 0 120px;
+    }
+
+    .frow,
+    .srow,
+    .trow {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+        width: 100%;
+        padding: 0 20px;
+        margin: 20px auto 0;
+        box-sizing: border-box;
+    }
+
+    .first,
+    .second,
+    .third,
+    .fourth,
+    .fifth,
+    .sixth,
+    .sev,
+    .eig,
+    .nin {
+        width: 100%;
+        min-width: 0;
+        height: 260px;
+        box-sizing: border-box;
+    }
+
+
+    .section2 {
+        height: auto;
+        padding-bottom: 40px;
+    }
+}
+/* iPad / smaller screens */
+@media (max-width: 1024px) {
+    .frow,
+    .srow,
+    .trow {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        padding: 0 15px;
+        gap: 15px;
+    }
+
+    .first,
+    .second,
+    .third,
+    .fourth,
+    .fifth,
+    .sixth,
+    .sev,
+    .eig,
+    .nin {
+        width: 100%;
+        min-width: 0;
+        height: 300px;
+        box-sizing: border-box;
+    }
+}
+/* Mobile */
+@media (max-width: 600px) {
+    .navbar {
+        height: auto;
+        min-height: 70px;
+        padding: 15px;
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-user {
+        position: relative;
+        top: auto;
+        right: auto;
+    }
+
+    .section1,
+    .container1 {
+        height: 330px;
+    }
+
+    .container1 img {
+        height: 330px;
+        object-fit: cover;
+    }
+
+    .text1 {
+        width: auto;
+        height: auto;
+        margin: -280px 20px 0;
+        gap: 8px;
+    }
+
+    .container1 h1 {
+        margin: 35px 20px 0;
+        font-size: 29px;
+    }
+
+    .container1 h2 {
+        margin: 0 20px;
+        font-size: 29px;
+    }
+
+    .container1 p {
+        margin: 12px 20px 0;
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .section2 {
+        height: auto;
+        margin-top: 20px;
+        padding-bottom: 30px;
+    }
+
+    .search-bar {
+        width: calc(100% - 30px);
+        margin: 0 15px;
+        padding: 15px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .search,
+    .speciality,
+    .loc,
+    .exp {
+        width: 100%;
+        flex: none;
+        height: 45px;
+        margin: 0;
+    }
+
+    .search input {
+        width: 100%;
+        height: 45px;
+        top: 0;
+        padding-left: 50px;
+    }
+
+    .search i {
+        left: 15px;
+        top: 12px;
+    }
+
+    .speciality select,
+    .loc select,
+    .exp select {
+        width: 100%;
+        height: 45px;
+        margin-top: 0;
+    }
+
+    .speciality i,
+    .loc i,
+    .exp i {
+        top: 12px;
+    }
+
+    .speciality span,
+    .loc span,
+    .exp span {
+        top: 3px;
+        right: 12px;
+        left: auto;
+    }
+
+    .search-btn {
+        width: 100%;
+        flex: none;
+        height: 45px;
+        margin: 0;
+    }
+
+    .search-btn i {
+        top: 12px;
+        left: 15px;
+    }
+
+    .frow,
+    .srow,
+    .trow {
+
+        margin-top: 20px;
+        padding: 0 15px;
+        grid-template-columns: 1fr;
+    }
+
+    .first,
+    .second,
+    .third,
+    .fourth,
+    .fifth,
+    .sixth,
+    .sev,
+    .eig,
+    .nin {
+        width: 100%;
+        max-width: 420px;
+        height: auto;
+        min-height: 230px;
+    }
+
+    .img1 {
+        flex: 0 0 120px;
+        width: 120px;
+        height: auto;
+        padding: 12px;
+    }
+
+    .img1 img {
+        width: 100%;
+        height: 170px;
+        object-fit: cover;
+    }
+
+    .text2 {
+        min-width: 0;
+        padding: 25px 10px 15px 5px;
+        overflow-wrap: anywhere;
+    }
+
+    .text2 h4 {
+        font-size: 17px;
+    }
+
+    .text2 .spec {
+        width: 100%;
+        max-width: 150px;
+        font-size: 13px;
+    }
+
+    .info {
+        padding-top: 15px;
+        padding-left: 0;
+        gap: 8px;
+        font-size: 12px;
+    }
+
+    .rating,
+    .experience,
+    .location {
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+
+    .view {
+        width: 100%;
+        max-width: 150px;
+        font-size: 13px;
+    }
+
+    .foot {
+        padding: 25px 20px;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 25px;
+        min-height: auto;
+    }
+
+    .links,
+    .quick,
+    .serv,
+    .contact {
+        width: 100%;
+    }
+
+    .txt {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .linee {
+        width: 100%;
+        height: 2px;
+        margin-top: 0;
+    }
+
+    .lline {
+        margin-top: 25px;
+    }
+
+    .copyright {
+        margin: 15px 20px;
+        
+        font-size: 13px;
+
+    }
+
+    .privacy {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin-top: 10px;
+        margin-left: 20px;
+        font-size: 13px;
+        margin-bottom:10px;
+    }
+}
+
+/* Bahut chhote phones */
+@media (max-width: 360px) {
+    .container1 h1,
+    .container1 h2 {
+        font-size: 25px;
+    }
+
+    .first,
+    .second,
+    .third,
+    .fourth,
+    .fifth,
+    .sixth,
+    .sev,
+    .eig,
+    .nin {
+        flex-direction: column;
+    }
+
+    .img1 {
+        width: 100%;
+        flex-basis: auto;
+    }
+
+    .img1 img {
+        width: 100%;
+        height: 220px;
+    }
+
+    .text2 {
+        padding: 10px 15px 20px;
+    }
+}

@@ -814,3 +814,594 @@
     height: 15px;
     background-color: #8eb2ec;
 }
+
+/* ================= RESPONSIVE SERVICES PAGE ================= */
+
+/* Laptop aur chhoti desktop screens */
+@media (max-width: 1200px) {
+    .navbar {
+        gap: 30px;
+        padding: 0 20px;
+    }
+
+    .nav-user {
+        right: 25px;
+    }
+
+    .container2 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .container5 {
+        width: calc(100% - 60px);
+        margin-left: 30px;
+    }
+
+    .container5 img {
+        width: 100%;
+    }
+
+    .container7 {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        gap: 15px;
+        justify-content: space-around;
+    }
+
+    .container8 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .container9 {
+        gap: 15px;
+    }
+
+    .doc, .books, .specs, .care {
+        width: 23%;
+    }
+
+    .container10 {
+        width: calc(100% - 60px);
+        margin-left: 30px;
+    }
+
+    .container10 i {
+        left: 25px;
+    }
+
+    .container10 p,
+    .container10 h3 {
+        left: 100px;
+    }
+
+    .bookBtn1 {
+        right: 25px;
+    }
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    .navbar {
+        gap: 20px;
+    }
+
+    .section1,
+    .container1 {
+        height: 420px;
+    }
+
+    .container1 img {
+        height: 420px;
+    }
+
+    .text,
+    .container1 h1,
+    .container1 h2,
+    .sec1p,
+    .bookBtn {
+        margin-left: 45px;
+    }
+    .container1 span{
+        margin-left: -20px;
+        padding-left: -300px;
+    }
+    .container1 h1,
+    .container1 h2 {
+        font-size: 42px;
+    }
+
+    .section2 {
+        height: auto;
+    }
+
+    .container2 {
+        height: auto;
+        min-height: 450px;
+        padding: 35px;
+        gap: 25px;
+    }
+
+    .text2 {
+        width: 50%;
+    }
+
+    .text2 h3 {
+        font-size: 32px;
+    }
+
+    .img2 {
+        width: 45%;
+    }
+
+    .img2 img {
+        width: 100%;
+        height: auto;
+    }
+
+    .points {
+        position: static;
+        width: 100%;
+        padding: 0 35px 35px;
+    }
+
+    .section3 {
+        height: auto;
+        padding: 30px 20px;
+    }
+
+    .container3,
+    .section3 h2,
+    .container4 {
+        position: static;
+        margin: 0 auto 20px;
+    }
+
+    .section3 h2 {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .container4 {
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .consult, .check, .care {
+        width: calc(50% - 10px);
+    }
+
+    .section4 {
+        height: auto;
+        padding: 20px;
+    }
+
+    .container5 {
+        width: 100%;
+        margin: 0;
+    }
+
+    .container6 {
+        left: 30px;
+    }
+
+    .section4 h4,
+    .section4 p {
+        left: 120px;
+    }
+
+    .bookbtn {
+        right: 20px;
+    }
+
+    .section4 span {
+        right: 30px;
+    }
+
+    .container9 {
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .doc, .books, .specs, .care {
+        width: 45%;
+    }
+
+    .container9 > span {
+        display: none;
+    }
+
+    .section6 {
+        height: auto;
+        padding-bottom: 25px;
+    }
+
+    .container10 {
+        height: auto;
+        min-height: 110px;
+        padding: 20px;
+    }
+
+    .container10 h3 {
+        max-width: 55%;
+        line-height: 1.3;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 600px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .navbar {
+        height: auto;
+        min-height: 70px;
+        padding: 15px;
+        gap: 14px 18px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navbar > a {
+        font-size: 14px;
+    }
+
+    .nav-user {
+        position: relative;
+        top: auto;
+        right: auto;
+    }
+
+    .nav-user .btn {
+        width: 85px;
+        height: 36px;
+        font-size: 14px;
+    }
+
+    /* Hero section */
+    .section1,
+    .container1 {
+        height: 410px;
+    }
+
+    .container1 img {
+        height: 410px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .text {
+        margin: -365px 20px 0;
+        font-size: 16px;
+        gap: 10px;
+    }
+
+    .text-para {
+        width: 125px;
+        height: 28px;
+        font-size: 15px;
+    }
+
+    .container1 h1,
+    .container1 h2 {
+        margin-left: 20px;
+        font-size: 34px;
+        line-height: 1.15;
+    }
+
+    .container1 h1 {
+        margin-top: 18px;
+    }
+
+    .container1 h2 {
+        margin-top: 5px;
+    }
+
+    .sec1p {
+        margin: 18px 20px 0;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .sec1p br {
+        display: none;
+    }
+
+    .bookBtn {
+        margin: 20px 20px 0;
+        width: 205px;
+        height: 42px;
+    }
+
+    .container1 span {
+        margin-left: -32px;
+    }
+
+    /* About section */
+    .section2 {
+        height: auto;
+    }
+
+    .container2 {
+        height: auto;
+        min-height: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 35px 20px 20px;
+        gap: 20px;
+    }
+
+    .text2 {
+        width: 100%;
+        transform: none;
+    }
+
+    .text2 h3 {
+        font-size: 30px;
+        margin: 15px 0;
+    }
+
+    .text2 p:last-of-type {
+        font-size: 16px;
+    }
+
+    .img2 {
+        width: 100%;
+    }
+
+    .img2 img {
+        width: 100%;
+        height: auto;
+        max-height: 280px;
+        object-fit: cover;
+    }
+
+    .points {
+        position: static;
+        width: 100%;
+        padding: 15px 20px 30px;
+        gap: 14px;
+    }
+
+    .points p {
+        font-size: 15px;
+    }
+
+    /* Services feature cards */
+    .section3 {
+        height: auto;
+        padding: 30px 15px;
+    }
+
+    .container3 {
+        position: static;
+        margin: 0 auto 15px;
+    }
+
+    .section3 h2 {
+        position: static;
+        margin: 0 auto 20px;
+        text-align: center;
+        font-size: 27px;
+    }
+
+    .container4 {
+        position: static;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    .consult, .check, .care {
+        width: 100%;
+        max-width: 420px;
+        margin: 0 auto;
+    }
+
+    /* Appointment banner */
+    .section4 {
+        height: auto;
+        padding: 15px;
+        margin-top: 15px;
+    }
+
+    .container5 {
+        width: 100%;
+        height: auto;
+        min-height: 190px;
+        margin: 0;
+        padding: 20px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .container5 img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .container6 {
+        position: absolute;
+        inset: auto;
+        width: 55px;
+        height: 55px;
+        flex-shrink: 0;
+        top: 30px;
+        left: 30px;
+    }
+
+    .container6 i {
+        top: 13px;
+        left: 16px;
+        font-size: 26px;
+    }
+
+    .section4 h4
+    {
+        position: absolute;
+        /* inset: auto; */
+        top:35px;
+        text-align: center;
+        margin: 0;
+    }
+    .section4 p{
+        position: absolute;
+        /* inset: auto; */
+        top: 65px;
+        left:130px;
+        
+        text-align: center;
+        margin: 0;
+    }
+    .section4 h4 {
+        font-size: 20px;
+    }
+
+    .section4 p {
+        font-size: 14px;
+    }
+
+    .bookbtn {
+        position: absolute;
+        /* inset: auto; */
+        left:90px;
+        top: 125px;
+        width: 180px;
+        height: 40px;
+    }
+
+    .section4 span {
+        top: auto;
+        right: calc(50% - 78px);
+        bottom: 32px;
+    }
+
+    /* Statistics */
+    .para {
+        height: auto;
+        padding: 30px 15px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px 10px;
+    }
+
+    .con1, .con2, .con3, .con4 {
+        width: 100%;
+        height: auto;
+        min-height: 140px;
+    }
+
+    .line {
+        display: none;
+    }
+
+    /* Footer */
+    .foot {
+        padding: 25px 20px;
+        margin-top: 20px;
+    }
+
+    .footer {
+        min-height: 0;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .links, .quick, .serv, .contact {
+        width: 100%;
+    }
+
+    .txt {
+        width: 100%;
+        max-width: 320px;
+        padding-left: 0;
+    }
+
+    .links .hlt {
+        margin-left: 0;
+    }
+
+    .social {
+        gap: 12px;
+        flex-wrap: wrap;
+        margin-left: 0;
+    }
+
+    .linee {
+        width: 100%;
+        height: 2px;
+        margin: 0;
+    }
+
+    .lline {
+        margin-top: 0;
+    }
+
+    .copyright {
+        margin: 15px 0;
+        font-size: 13px;
+        margin-left: 20px;
+    }
+
+    .privacy {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin: 10px 0 0;
+        font-size: 13px;
+        margin-left: 20px;
+        margin-bottom:10px;
+    }
+}
+
+/* Very small phones */
+@media (max-width: 360px) {
+    .navbar {
+        gap: 12px;
+    }
+
+    .navbar > a {
+        font-size: 13px;
+    }
+
+    .container1 h1,
+    .container1 h2 {
+        font-size: 29px;
+    }
+
+    .text {
+        margin-top: -365px;
+    }
+
+    .text2 h3 {
+        font-size: 26px;
+    }
+
+    .consult h5, .check h5, .care h5,
+    .consult p, .check p, .care p {
+        margin-left: 95px;
+    }
+
+    .icon-div {
+        margin-left: 12px;
+    }
+
+    .container10 {
+        width: calc(100% - 30px);
+        margin-left: 15px;
+    }
+}

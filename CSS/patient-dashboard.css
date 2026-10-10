@@ -619,3 +619,227 @@ body {
 
     font-weight: bold;
 }
+
+
+/* ================= RESPONSIVE DESIGN ================= */
+
+/* Tablet and smaller laptops */
+@media (max-width: 1024px) {
+
+    .sidebar {
+        width: 220px;
+        padding: 25px 15px;
+    }
+
+    .main-content {
+        width: calc(100% - 220px);
+        margin-left: 220px;
+        padding: 25px;
+        min-width: 0;
+    }
+
+    .stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+    }
+
+    .content-grid,
+    .health-section {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-card {
+        padding: 18px;
+    }
+}
+
+
+/* Mobile phones */
+@media (max-width: 600px) {
+
+    .dashboard {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Sidebar becomes a top navigation section */
+    .sidebar {
+        position: relative;
+        width: 100%;
+        min-height: auto;
+        padding: 20px 15px;
+    }
+
+    .logo {
+        margin-bottom: 20px;
+    }
+
+    .profile-mini {
+        padding-bottom: 15px;
+    }
+
+    .sidebar-nav {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px;
+    }
+
+    .sidebar-nav a,
+    .logout {
+        padding: 12px 10px;
+        gap: 8px;
+        font-size: 13px;
+    }
+
+    .logout {
+        position: static;
+        margin-top: 15px;
+        width: 100%;
+    }
+
+    /* Main content */
+    .main-content {
+        width: 100%;
+        margin-left: 0;
+        padding: 20px 14px;
+    }
+
+    .topbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+        margin-bottom: 25px;
+    }
+
+    .topbar h1 {
+        font-size: 24px;
+    }
+
+    .top-profile {
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    /* Two stat cards per row */
+    .stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .stat-card {
+        padding: 13px 10px;
+        gap: 10px;
+        min-width: 0;
+    }
+
+    .stat-icon {
+        width: 38px;
+        height: 38px;
+        flex-shrink: 0;
+        font-size: 16px;
+    }
+
+    .stat-card p {
+        font-size: 11px;
+    }
+
+    .stat-card h2 {
+        font-size: 21px;
+    }
+
+    /* Dashboard cards */
+    .dashboard-card {
+        padding: 17px 13px;
+        min-width: 0;
+    }
+
+    .card-heading {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .card-heading h2 {
+        font-size: 17px;
+    }
+
+    /* Upcoming appointment */
+    .doctor-appointment {
+        flex-wrap: wrap;
+        padding: 12px;
+        gap: 12px;
+    }
+
+    .doctor-appointment img {
+        width: 55px;
+        height: 55px;
+    }
+
+    .appointment-info {
+        min-width: 0;
+    }
+
+    .appointment-details {
+        flex-wrap: wrap;
+        gap: 8px 12px;
+    }
+
+    .status {
+        margin-top: 5px;
+    }
+
+    /* Quick action buttons */
+    .quick-actions {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    /* Recent appointments table */
+    .appointment-table {
+        max-width: 100%;
+        overflow-x: auto;
+    }
+
+    .table-head,
+    .table-row {
+        min-width: 460px;
+        grid-template-columns: 1.4fr 1fr 1fr 1fr;
+        gap: 8px;
+        padding: 13px 8px;
+        font-size: 12px;
+    }
+
+    .table-head {
+        font-size: 11px;
+    }
+
+    /* Health history */
+    .history-item {
+        gap: 10px;
+    }
+
+    .health-tip h2 {
+        font-size: 19px;
+    }
+}
+
+
+/* Very small phones */
+@media (max-width: 360px) {
+
+    .main-content {
+        padding: 16px 10px;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .topbar h1 {
+        font-size: 21px;
+    }
+
+    .sidebar-nav a {
+        font-size: 12px;
+        padding: 10px 8px;
+    }
+}

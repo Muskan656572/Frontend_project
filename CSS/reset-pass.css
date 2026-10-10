@@ -424,3 +424,537 @@
     opacity: 0.8;
     color:#18335d
 }
+
+/* =========================================
+   RESET PASSWORD PAGE
+   TABLET: 769px–1100px
+========================================= */
+
+@media screen and (min-width: 769px) and (max-width: 1100px) {
+    .section1 {
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+        padding: 45px 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+    }
+
+    .section1 > img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .form {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        width: 80%;
+        max-width: none;
+        min-width: 0;
+        height: auto;
+        min-height: 890px;
+        margin: 25px 0 0;
+        padding: 25px 20px;
+    }
+
+    .circle {
+        top: -42px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .circle1 {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 82px;
+        height: 82px;
+    }
+
+    .circle1 h2 {
+        position: absolute;
+        font-size: 52px;
+        left:19px;
+        top:8px;
+    }
+    .points{
+        margin-left: 270px;
+    }
+    
+    .form h1 {
+
+        margin-top: 45px;
+        margin-bottom: 22px;
+        font-size: 27px;
+    }
+
+    .one,
+    .two,
+    .three {
+        gap: 10px;
+    }
+
+    .one p,
+    .two p,
+    .three p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .one i,
+    .two i,
+    .three i {
+        font-size: 15px;
+    }
+
+    .info {
+        position: relative;
+        width: 60%;
+        max-width: none;
+        min-width: 0;
+        height: auto;
+        min-height: 0;
+        margin-left: 180px;
+        margin-top:50px;
+        padding: 28px 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .info h1 {
+        padding-top: 45px;
+        margin: 12px 0 20px;
+        font-size: 28px;
+    }
+
+    .info .log {
+        margin-top: -15px;
+        margin-bottom: 8px;
+        font-size: 15px;
+    }
+
+    .lock-icon {
+        top: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 65px;
+        height: 65px;
+    }
+
+    .lock-icon i {
+        top: 17px;
+        left: 20px;
+        font-size: 30px;
+    }
+
+    .input-box {
+        width: 100%;
+        padding: 8px 0;
+        margin: 0;
+    }
+
+    .input-box i {
+        top: 33px;
+        left: 14px;
+        font-size: 15px;
+    }
+
+    .input-box input {
+        width: 100%;
+        height: 48px;
+        padding-left: 42px;
+        font-size: 14px;
+    }
+
+    .input-box input::placeholder {
+        font-size: 14px;
+    }
+
+    .info .signup-btn {
+        width: 100%;
+        height: 48px;
+        margin: 12px 0 0;
+        font-size: 14px;
+    }
+
+    .info > a {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+}
+
+/* =========================================
+   MOBILE + NARROW TABLET
+   768px and below
+========================================= */
+
+@media screen and (max-width: 768px) {
+    .section1 {
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+        padding: 55px 20px 35px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 0;
+        overflow: hidden;
+    }
+
+    .section1 > img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center top;
+    }
+
+    .form {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        width: 100%;
+        max-width: 550px;
+        min-width: 0;
+        height: auto;
+        min-height: 0;
+        margin: 0;
+        padding: 25px 24px;
+        border-radius: 18px 18px 0 0;
+    }
+
+    .circle {
+        top: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 75px;
+        height: 75px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .circle1 {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 60px;
+        height: 60px;
+    }
+
+    .circle1 h2 {
+        position: static;
+        font-size: 40px;
+    }
+
+    .form h1 {
+        margin-top: 35px;
+        margin-bottom: 20px;
+        font-size: 26px;
+    }
+
+    .points {
+        gap: 9px;
+        margin-bottom: 10px;
+    }
+
+    .one,
+    .two,
+    .three {
+        gap: 10px;
+    }
+
+    .one p,
+    .two p,
+    .three p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .one i,
+    .two i,
+    .three i {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .info {
+        position: relative;
+        width: 100%;
+        max-width: 550px;
+        min-width: 0;
+        height: auto;
+        min-height: 0;
+        margin: 0;
+        padding: 30px 25px 25px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        border-radius: 0 0 18px 18px;
+    }
+
+    .info h1 {
+        padding-top: 20px;
+        margin: 10px 0 15px;
+        font-size: 27px;
+    }
+
+    .info .log {
+        margin: 0 0 10px;
+        font-size: 14px;
+    }
+
+    .lock-icon {
+        top: -24px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .lock-icon i {
+        position: static;
+        font-size: 24px;
+    }
+
+    .input-box {
+        width: 100%;
+        padding: 7px 0;
+        margin: 0 0 5px;
+    }
+
+    .input-box i {
+        top: 32px;
+        left: 14px;
+        font-size: 15px;
+    }
+
+    .input-box input {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        height: 46px;
+        padding: 0 12px 0 42px;
+        font-size: 14px;
+    }
+
+    .input-box input::placeholder {
+        font-size: 13px;
+    }
+
+    .info .signup-btn {
+        width: 100%;
+        height: 46px;
+        margin: 12px 0 0;
+        font-size: 14px;
+    }
+
+    .info > a {
+        display: block;
+        margin-top: 8px;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    #error-message {
+        margin: 5px 0;
+        font-size: 13px;
+        overflow-wrap: anywhere;
+    }
+}
+
+/* =========================================
+   SMALL MOBILE
+   480px and below
+========================================= */
+
+@media screen and (max-width: 480px) {
+    .section1 {
+        padding: 35px 12px 25px;
+    }
+
+    .form {
+        margin-top:150px;
+        padding: 20px 16px;
+        border-radius: 16px 16px 0 0;
+    }
+
+    .circle {
+        top: -27px;
+        width: 65px;
+        height: 65px;
+    }
+
+    .circle1 {
+        width: 52px;
+        height: 52px;
+    }
+
+    .circle1 h2 {
+        font-size: 35px;
+        position: relative;
+        left:10px;
+        top:3px;
+    }
+
+    .form h1 {
+        margin-top: 30px;
+        margin-bottom: 16px;
+        font-size: 23px;
+    }
+
+    .points {
+        gap: 8px;
+    }
+
+    .one,
+    .two,
+    .three {
+        gap: 8px;
+    }
+
+    .one p,
+    .two p,
+    .three p {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .one i,
+    .two i,
+    .three i {
+        font-size: 13px;
+    }
+
+    .info {
+        padding: 25px 14px 22px;
+        border-radius: 0 0 16px 16px;
+    }
+
+    .info h1 {
+        padding-top: 18px;
+        margin: 8px 0 12px;
+        font-size: 23px;
+    }
+
+    .info .log {
+        margin-bottom: 8px;
+        font-size: 12px;
+    }
+
+    .lock-icon {
+        top: -22px;
+        width: 44px;
+        height: 44px;
+    }
+
+    .lock-icon i {
+        font-size: 21px;
+    }
+
+    .input-box {
+        padding: 6px 0;
+        margin-bottom: 4px;
+    }
+
+    .input-box i {
+        top: 29px;
+        left: 12px;
+        font-size: 13px;
+    }
+
+    .input-box input {
+        height: 42px;
+        padding-left: 36px;
+        font-size: 12px;
+    }
+
+    .input-box input::placeholder {
+        font-size: 12px;
+    }
+
+    .info .signup-btn {
+        height: 42px;
+        margin-top: 10px;
+        font-size: 12px;
+    }
+
+    .info > a {
+        font-size: 12px;
+    }
+}
+
+/* =========================================
+   EXTRA SMALL MOBILE
+   360px and below
+========================================= */
+
+@media screen and (max-width: 360px) {
+    .section1 {
+        padding: 30px 9px 20px;
+    }
+
+    .form {
+        padding: 18px 12px;
+    }
+
+    .form h1 {
+        font-size: 21px;
+    }
+
+    .one p,
+    .two p,
+    .three p {
+        font-size: 11px;
+    }
+
+    .info {
+        padding: 23px 11px 18px;
+    }
+
+    .info h1 {
+        font-size: 21px;
+    }
+
+    .input-box input {
+        height: 39px;
+        padding-left: 33px;
+        font-size: 11px;
+    }
+
+    .input-box input::placeholder {
+        font-size: 11px;
+    }
+
+    .input-box i {
+        top: 27px;
+        left: 10px;
+        font-size: 12px;
+    }
+
+    .info .signup-btn {
+        height: 39px;
+        font-size: 11px;
+    }
+}
+```

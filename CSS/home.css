@@ -1697,3 +1697,1181 @@ select{
     height: 15px;
     background-color: #8eb2ec;
 }
+
+```css
+/* =====================================
+   CAREPLUS HOME PAGE - RESPONSIVE CSS
+   Add this at the END of home.css
+===================================== */
+
+html {
+    width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    width: 100%;
+    height: 80px;
+    gap: clamp(15px, 4vw, 55px);
+    padding: 0 5%;
+    justify-content: center;
+}
+
+.nav-user {
+    right: 5%;
+}
+
+/* ================= HERO SECTION ================= */
+
+.section1 {
+    width: 100%;
+    min-height: 600px;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    width: 55%;
+    max-width: 700px;
+    padding: 100px 0 100px 7%;
+}
+
+.section1 h1 {
+    font-size: clamp(38px, 5vw, 65px);
+}
+
+.description {
+    font-size: clamp(16px, 1.6vw, 20px);
+}
+
+/* ================= SERVICES ================= */
+
+.section2 {
+    height: auto;
+    padding: 30px 5% 50px;
+}
+
+.container2 {
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.care {
+    font-size: clamp(26px, 4vw, 50px);
+    text-align: center;
+    line-height: 1.2;
+}
+
+.health {
+    font-size: clamp(14px, 1.8vw, 20px);
+    line-height: 1.5;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.container3 {
+    height: auto;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.card1,
+.card2,
+.card3,
+.card4,
+.card5 {
+    width: 100%;
+    min-width: 0;
+    height: 270px;
+    margin: 0;
+    border-radius: 22px;
+}
+
+.card1 h3,
+.card2 h3,
+.card3 h3,
+.card4 h3,
+.card5 h3 {
+    margin-left: 18px;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.card1 p,
+.card2 p,
+.card3 p,
+.card4 p,
+.card5 p {
+    margin-left: 18px;
+    margin-right: 12px;
+    line-height: 1.4;
+    overflow-wrap: anywhere;
+}
+
+.card1 a,
+.card2 a,
+.card3 a,
+.card4 a,
+.card5 a {
+    left: 18px;
+    margin-left: 0;
+    top: auto;
+    bottom: 22px;
+}
+
+.card1 .icon,
+.card2 .icon,
+.card3 .icon,
+.card4 .icon,
+.card5 .icon {
+    margin-left: 20px;
+}
+
+.circle {
+    left: auto;
+    right: 15px;
+    top: 18px;
+}
+
+/* ================= OUR IMPACT ================= */
+
+.section3 {
+    height: auto;
+    margin-top: 10px;
+}
+
+.container4 {
+    height: auto;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.text {
+    width: 32%;
+    height: auto;
+    padding: 20px 10px;
+}
+
+.para {
+    width: 45%;
+    height: auto;
+    flex: 1;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.container4 .image {
+    width: 23%;
+}
+
+.container4 .image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 240px;
+    object-fit: cover;
+}
+
+.head {
+    font-size: clamp(20px, 2vw, 30px);
+    text-align: center;
+    line-height: 1.3;
+}
+
+.para1 {
+    margin: 15px 10px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.con1,
+.con2,
+.con3,
+.con4 {
+    width: 25%;
+    min-width: 0;
+    height: auto;
+}
+
+.con1 h1,
+.con2 h1,
+.con3 h1,
+.con4 h1 {
+    margin-left: 0;
+    text-align: center;
+    font-size: clamp(22px, 2.5vw, 32px);
+}
+
+.con1 p,
+.con2 p,
+.con3 p,
+.con4 p {
+    margin-left: 0;
+    text-align: center;
+    font-size: 12px;
+}
+
+.con1 .icon1,
+.con2 .icon1,
+.con3 .icon1,
+.con4 .icon1 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.line {
+    flex-shrink: 0;
+}
+
+/* ================= WHY CHOOSE US ================= */
+
+.section4 {
+    height: auto;
+    margin-top: 20px;
+    padding: 20px 4% 35px;
+}
+
+.container5 {
+    height: auto;
+    margin-bottom: 25px;
+}
+
+.container5 h1 {
+    font-size: clamp(23px, 3vw, 32px);
+    text-align: center;
+}
+
+.container5 .para2 {
+    line-height: 1.5;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.containers {
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.cont1,
+.cont2,
+.cont3,
+.cont4 {
+    width: 100%;
+    height: auto;
+    min-width: 0;
+    padding-bottom: 15px;
+}
+
+.cont1 h4,
+.cont2 h4,
+.cont3 h4,
+.cont4 h4 {
+    margin: 10px 0 0;
+    line-height: 1.4;
+}
+
+.cont1 p,
+.cont2 p,
+.cont3 p,
+.cont4 p {
+    margin: 8px 0;
+    line-height: 1.5;
+}
+
+.containers > span {
+    display: none;
+}
+
+/* ================= DOCTORS SECTION ================= */
+
+.section5 {
+    height: auto;
+    padding: 25px 4% 40px;
+}
+
+.container6 {
+    height: auto;
+    padding-bottom: 25px;
+}
+
+.container6 h1 {
+    font-size: clamp(28px, 4vw, 46px);
+    text-align: center;
+}
+
+.container6 .para3 {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.drops {
+    height: auto;
+}
+
+#dropdowns {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.search-icon,
+.search-icon1 {
+    display: none;
+}
+
+#searchDoctor,
+#allDoctors,
+#Speciality,
+#location,
+#exp,
+#search {
+    box-sizing: border-box;
+    width: auto;
+    min-width: 140px;
+    height: 48px;
+    margin: 0;
+    padding: 0 15px;
+    border-radius: 25px;
+}
+
+#searchDoctor {
+    flex: 1 1 280px;
+    max-width: 400px;
+    min-width: 220px;
+}
+
+#allDoctors {
+    flex: 0 1 150px;
+}
+
+#Speciality,
+#location,
+#exp {
+    flex: 1 1 140px;
+    max-width: 180px;
+}
+
+#search {
+    flex: 0 1 150px;
+}
+
+.drops #dropdowns > span {
+    display: none;
+}
+
+.doctorsSection {
+    height: auto;
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+    align-items: stretch;
+}
+
+.doc1,
+.doc2,
+.doc3,
+.doc4 {
+    width: 100%;
+    height: auto;
+    min-width: 0;
+    margin: 0;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+.docimg {
+    width: 100%;
+    height: 180px;
+    margin: 0;
+}
+
+.docimg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.spec,
+.info,
+.rating,
+.exp,
+.loc,
+.avail,
+.slots {
+    width: 100%;
+    min-width: 0;
+    height: auto;
+    margin-left: 0;
+    box-sizing: border-box;
+}
+
+.spec h2 {
+    margin-left: 0;
+    font-size: 19px;
+    overflow-wrap: anywhere;
+}
+
+.spec p {
+    margin-left: 0;
+    line-height: 1.3;
+}
+
+.info {
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.rating {
+    gap: 6px;
+    margin-top: 8px;
+}
+
+.rating p {
+    width: auto;
+    margin: 0;
+    overflow-wrap: anywhere;
+}
+
+.rating span {
+    width: auto;
+}
+
+.exp {
+    gap: 7px;
+    margin-top: 8px;
+}
+
+.exp p {
+    margin: 0;
+    overflow-wrap: anywhere;
+}
+
+.loc {
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.loc p {
+    margin: 0;
+    overflow-wrap: anywhere;
+    line-height: 1.4;
+}
+
+.linedoc {
+    width: 100%;
+    margin: 12px 0;
+}
+
+.avail {
+    gap: 8px;
+    margin: 10px 0;
+}
+
+.avail p {
+    margin: 0;
+}
+
+.slots {
+    gap: 6px;
+    margin: 10px 0;
+}
+
+.slot1,
+.slot2,
+.slot3 {
+    flex: 1;
+    width: auto;
+    min-width: 0;
+}
+
+.slot1 p,
+.slot2 p,
+.slot3 p {
+    margin: 6px 0;
+    text-align: center;
+    font-size: 11px;
+}
+
+.view {
+    width: 100%;
+    height: 45px;
+    margin: 15px 0 0;
+}
+
+.viewAll {
+    width: 100%;
+    margin: 25px 0 0;
+    text-align: center;
+}
+
+.viewAll button {
+    max-width: 100%;
+}
+
+/* ================= APPOINTMENT ================= */
+
+.section6 {
+    height: auto;
+    margin-top: 30px;
+}
+
+.container7 {
+    height: auto;
+    min-height: 350px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.booking {
+    width: 50%;
+    height: auto;
+    margin: 0;
+    padding: 30px 4%;
+    box-sizing: border-box;
+}
+
+.app {
+    margin-top: 10px;
+}
+
+.booking h3 {
+    width: 100%;
+    height: auto;
+    margin: 25px 0;
+    font-size: clamp(28px, 3.5vw, 45px);
+    line-height: 1.2;
+}
+
+.booking p {
+    width: 100%;
+    height: auto;
+    margin: 0 0 25px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.bookbtn {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    margin: 0;
+}
+
+.bookbtn button {
+    width: 100%;
+    max-width: 250px;
+    padding: 10px;
+    gap: 8px;
+}
+
+.appointimg {
+    width: 50%;
+    height: 100%;
+    padding-left: 0;
+}
+
+.appointimg img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 350px;
+    object-fit: cover;
+}
+
+/* ================= FOOTER ================= */
+
+.foot {
+    box-sizing: border-box;
+    height: auto;
+    padding: 35px 5% 25px;
+}
+
+.footer {
+    min-height: 0;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1.3fr;
+    gap: 25px;
+}
+
+.links,
+.quick,
+.serv,
+.contact {
+    width: 100%;
+    min-width: 0;
+}
+
+.txt {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 0 0;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+.linee {
+    display: none;
+}
+
+.quick a,
+.serv a {
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+.address p,
+.phone p,
+.email p {
+    overflow-wrap: anywhere;
+}
+
+.lline {
+    margin-top: 0;
+}
+
+.copyright {
+    margin: 15px 5% 0;
+}
+
+.privacy {
+    margin: 10px 5% 20px;
+}
+
+/* =====================================
+   TABLET: 769px - 1100px
+===================================== */
+
+@media (max-width: 1100px) {
+    .navbar {
+        gap: 25px;
+    }
+
+    .nav-user {
+        right: 3%;
+    }
+
+    .container {
+        width: 60%;
+    }
+
+    .container3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .card1,
+    .card2,
+    .card3,
+    .card4,
+    .card5 {
+        min-height: 250px;
+    }
+
+    .doctorsSection {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .container4 .image {
+        display: none;
+    }
+
+    .text {
+        width: 35%;
+    }
+
+    .para {
+        width: 60%;
+    }
+
+    .booking h3 {
+        font-size: 34px;
+    }
+
+    .footer {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        row-gap: 35px;
+    }
+}
+
+/* =====================================
+   TABLET / MOBILE: 768px AND BELOW
+===================================== */
+
+@media (max-width: 768px) {
+    .navbar {
+        height: auto;
+        min-height: 70px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px 20px;
+        padding: 15px 100px 15px 15px;
+    }
+
+    .navbar > a {
+        font-size: 14px;
+    }
+
+    .nav-user {
+        right: 12px;
+        top: 15px;
+    }
+
+    .nav-user .btn {
+        width: 80px;
+        height: 38px;
+        font-size: 14px;
+    }
+
+    .section1 {
+        min-height: 520px;
+        background-position: center;
+    }
+
+    .container {
+        width: 85%;
+        padding: 80px 5% 70px;
+    }
+
+    .tagline {
+        font-size: 13px;
+        letter-spacing: 2px;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .tagline span {
+        width: 30px;
+        flex-shrink: 0;
+    }
+
+    .section1 h1 {
+        font-size: clamp(36px, 8vw, 52px);
+    }
+
+    .description {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .service-btn {
+        padding: 14px 20px;
+        font-size: 15px;
+    }
+
+    .section2 {
+        padding: 30px 5%;
+    }
+
+    .servicess {
+        font-size: 16px;
+    }
+
+    .container3 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+    }
+
+    .card1,
+    .card2,
+    .card3,
+    .card4,
+    .card5 {
+        height: 250px;
+    }
+
+    .container4 {
+        flex-direction: column;
+    }
+
+    .text,
+    .para {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .para {
+        padding: 15px;
+    }
+
+    .section4 {
+        padding: 25px 5%;
+    }
+
+    .containers {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    #dropdowns {
+        gap: 10px;
+    }
+
+    #searchDoctor {
+        flex: 1 1 100%;
+        max-width: none;
+    }
+
+    #allDoctors,
+    #Speciality,
+    #location,
+    #exp,
+    #search {
+        flex: 1 1 40%;
+        max-width: none;
+    }
+
+    .doctorsSection {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+    }
+
+    .container7 {
+        flex-direction: column-reverse;
+    }
+
+    .booking,
+    .appointimg {
+        width: 100%;
+    }
+
+    .booking {
+        padding: 30px 7%;
+    }
+
+    .appointimg img {
+        min-height: 240px;
+        max-height: 300px;
+    }
+
+    .footer {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 30px 20px;
+    }
+
+    .logo h2,
+    .logo span {
+        font-size: 28px;
+    }
+
+    .logo i {
+        font-size: 40px;
+    }
+
+    .plus i {
+        font-size: 24px;
+        margin-left: -39px;
+    }
+
+    .privacy {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin-left: 5%;
+    }
+}
+
+/* =====================================
+   MOBILE: 480px AND BELOW
+===================================== */
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 15px 10px;
+        padding-right: 85px;
+        gap: 12px;
+        justify-content: flex-start;
+    }
+
+    .navbar > a {
+        font-size: 12px;
+    }
+
+    .nav-user {
+        right: 8px;
+        top: 15px;
+    }
+
+    .nav-user .btn {
+        width: 70px;
+        font-size: 12px;
+    }
+
+    .section1 {
+        min-height: 470px;
+    }
+
+    .container {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 65px 7%;
+    }
+
+    .tagline {
+        font-size: 11px;
+        letter-spacing: 1px;
+    }
+
+    .section1 h1 {
+        font-size: 38px;
+    }
+
+    .description {
+        font-size: 15px;
+    }
+
+    .service-btn {
+        padding: 12px 15px;
+        font-size: 13px;
+    }
+
+    .service-btn span {
+        margin-left: 8px;
+        font-size: 18px;
+    }
+
+    .section2 {
+        padding: 25px 15px;
+    }
+
+    .care {
+        font-size: 27px;
+    }
+
+    .health {
+        font-size: 14px;
+    }
+
+    .container3 {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .card1,
+    .card2,
+    .card3,
+    .card4,
+    .card5 {
+        min-height: 235px;
+        height: auto;
+        padding-bottom: 55px;
+    }
+
+    .card1 h3,
+    .card2 h3,
+    .card3 h3,
+    .card4 h3,
+    .card5 h3 {
+        font-size: 19px;
+    }
+
+    .section3 {
+        margin-top: 0;
+    }
+
+    .textss {
+        font-size: 16px;
+    }
+
+    .head {
+        font-size: 24px;
+    }
+
+    .para {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .con1,
+    .con2,
+    .con3,
+    .con4 {
+        width: 42%;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .section4 {
+        padding: 20px 15px;
+    }
+
+    .container5 h1 {
+        font-size: 24px;
+    }
+
+    .container5 .para2 {
+        font-size: 14px;
+    }
+
+    .containers {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .cont1,
+    .cont2,
+    .cont3,
+    .cont4 {
+        min-height: 90px;
+    }
+
+    .section5 {
+        padding: 25px 15px 35px;
+    }
+
+    .container6 h1 {
+        font-size: 28px;
+    }
+
+    .container6 .para3 {
+        font-size: 14px;
+    }
+
+    #allDoctors,
+    #Speciality,
+    #location,
+    #exp,
+    #search {
+        flex: 1 1 100%;
+        width: 100%;
+    }
+
+    .doctorsSection {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .doc1,
+    .doc2,
+    .doc3,
+    .doc4 {
+        padding: 15px;
+    }
+
+    .docimg {
+        height: 220px;
+    }
+
+    .spec h2 {
+        font-size: 21px;
+    }
+
+    .slot1 p,
+    .slot2 p,
+    .slot3 p {
+        font-size: 12px;
+    }
+
+    .viewAll button {
+        width: 100%;
+    }
+
+    .booking h3 {
+        font-size: 30px;
+    }
+
+    .booking p {
+        font-size: 15px;
+    }
+
+    .bookbtn button {
+        font-size: 13px;
+    }
+
+    .footer {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .links,
+    .quick,
+    .serv,
+    .contact {
+        width: 100%;
+    }
+
+    .txt {
+        max-width: 100%;
+    }
+
+    .copyright {
+        margin: 15px 5%;
+        font-size: 12px;
+    }
+
+    .privacy {
+        gap: 10px;
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+}
+/* Fix Learn More and arrow alignment */
+
+.card1,
+.card2,
+.card3,
+.card4,
+.card5 {
+    position: relative;
+}
+
+.card1 a,
+.card2 a,
+.card3 a,
+.card4 a,
+.card5 a {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    top: auto;
+    margin: 0;
+}
+
+/* Arrow circle */
+.circle {
+    position: absolute;
+    top: 90%;
+    right: 80px;
+    left: auto;
+    transform: translateY(-50%);
+    z-index: 2;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle span {
+    margin: 0;
+    line-height: 1;
+    font-size: 15px;
+}
+
+/* Mobile responsive */
+@media (max-width: 480px) {
+    .circle {
+        right: 10px;
+    }
+}

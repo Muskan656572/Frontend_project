@@ -641,3 +641,222 @@ body {
     background-color: #ffe5e5;
     color: #d93025;
 }
+
+/* ================= RESPONSIVE DESIGN ================= */
+
+/* Tablet */
+@media (max-width: 1024px) {
+
+    .sidebar {
+        width: 220px;
+        padding: 25px 15px;
+    }
+
+    .main {
+        width: calc(100% - 220px);
+        margin-left: 220px;
+        padding: 25px 20px;
+        min-width: 0;
+    }
+
+    .stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+    }
+
+    .bottom-section {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-card {
+        padding: 16px;
+        gap: 10px;
+    }
+
+    .appointments-section,
+    .card {
+        padding: 20px;
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    /* Sidebar ko top par lana */
+    .sidebar {
+        position: relative;
+        width: 100%;
+        min-height: auto;
+        padding: 20px 15px;
+    }
+
+    .logo {
+        margin-bottom: 20px;
+    }
+
+    .logo > i {
+        left: calc(50% - 100px);
+    }
+
+    .logo .plus {
+        left: calc(50% - 40px);
+    }
+
+    .doctor-info {
+        padding-bottom: 15px;
+    }
+
+    .sidebar-nav {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px;
+    }
+
+    .sidebar-nav a {
+        padding: 11px 9px;
+        gap: 8px;
+        font-size: 13px;
+    }
+
+    .back-home {
+        position: static;
+        margin-top: 15px;
+        padding: 12px 10px;
+    }
+
+    /* Main content */
+    .main {
+        width: 100%;
+        margin-left: 0;
+        padding: 20px 12px;
+    }
+
+    .topbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        margin-bottom: 25px;
+    }
+
+    .topbar h1 {
+        font-size: 24px;
+    }
+
+    .top-profile {
+        gap: 15px;
+    }
+
+    /* Statistics */
+    .stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .stat-card {
+        min-width: 0;
+        padding: 12px 9px;
+        gap: 8px;
+    }
+
+    .stat-icon {
+        width: 36px;
+        height: 36px;
+        flex-shrink: 0;
+        font-size: 16px;
+    }
+
+    .stat-card p {
+        font-size: 11px;
+    }
+
+    .stat-card h2 {
+        font-size: 21px;
+    }
+
+    /* Appointment section */
+    .appointments-section,
+    .card {
+        padding: 15px 12px;
+    }
+
+    .section-header,
+    .card-header {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .section-header h2,
+    .card-header h2 {
+        font-size: 17px;
+    }
+
+    /* Appointment table: allow horizontal scrolling */
+    .appointment-table {
+        max-width: 100%;
+        overflow-x: auto;
+    }
+
+    .table-header,
+    .appointment-row {
+        min-width: 520px;
+        grid-template-columns: 2fr 1fr 1.2fr 1fr;
+        gap: 8px;
+        padding: 13px 8px;
+    }
+
+    .patient {
+        gap: 8px;
+    }
+
+    .patient h4 {
+        font-size: 13px;
+    }
+
+    .patient-avatar {
+        width: 35px;
+        height: 35px;
+        flex-shrink: 0;
+    }
+
+    /* Confirm and reject buttons */
+    .confirm-btn,
+    .reject-btn {
+        padding: 7px 8px;
+        margin: 5px 3px 0 0;
+        font-size: 11px;
+    }
+
+    /* Bottom cards and quick actions */
+    .bottom-section {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .quick-actions {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+
+/* Very small phones */
+@media (max-width: 360px) {
+
+    .main {
+        padding: 15px 9px;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .topbar h1 {
+        font-size: 21px;
+    }
+
+    .sidebar-nav a {
+        font-size: 12px;
+        padding: 10px 7px;
+    }
+}

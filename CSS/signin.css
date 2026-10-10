@@ -1,430 +1,792 @@
-*{
-    margin:0;
-    padding:0;
+
+/* =========================================
+   CAREPLUS SIGN UP PAGE
+   COMPLETE RESPONSIVE CSS
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-.navbar {
-    height: 80px;
-    width: 100%;
 
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    font-family: "Times New Roman", Times, serif;
+}
+
+body {
+    min-height: 100vh;
+}
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    min-height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
-
-    gap: 100px;
-
+    gap: clamp(18px, 4vw, 65px);
+    padding: 15px 160px 15px 20px;
     background-color: rgba(105, 90, 205, 0.796);
-
-    position: relative;
+    flex-wrap: wrap;
 }
-
-
-/* Normal navbar links */
 
 .navbar > a {
-    text-decoration: none;
     color: white;
+    text-decoration: none;
+    white-space: nowrap;
 }
-
-
-/* ================= SIGN IN ================= */
 
 .nav-user {
     position: absolute;
-
-    right: 200px;
     top: 20px;
-
+    right: 30px;
     z-index: 1000;
 }
 
-
-/* Sign In button */
-
 .nav-user .btn {
+    min-width: 100px;
     height: 40px;
-    width: 100px;
-
-    border-radius: 30px;
-
+    padding: 0 15px;
     border: 1px solid #999;
-
+    border-radius: 30px;
     background-color: white;
-
     color: black;
-
     font-size: 16px;
-
     cursor: pointer;
+    white-space: nowrap;
 }
-
-
-/* ================= USER MENU ================= */
 
 .user-menu {
     position: relative;
-
     display: none;
 }
 
-
-/* User first letter */
-
 .user-letter {
-    height: 42px;
     width: 42px;
-
-    border: none;
-    border-radius: 50%;
-
-    background-color: white;
-
-    color: #7568d0;
-
-    font-size: 20px;
-    font-weight: bold;
-
-    cursor: pointer;
-
+    height: 42px;
     display: flex;
     align-items: center;
     justify-content: center;
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+    color: #7568d0;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
 }
-
-
-/* ================= DROPDOWN ================= */
 
 .dropdown {
     display: none;
-
     position: absolute;
-
     top: 52px;
     right: 0;
-
     width: 170px;
-
     padding: 8px;
-
     background-color: white;
-
     border-radius: 12px;
-
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.18);
-
     z-index: 9999;
 }
-
-
-/* JS click ke baad */
 
 .dropdown.show {
     display: block;
 }
 
-
-/* Dashboard link */
-
-.dropdown a {
+.dropdown a,
+#deleteAccountBtn {
     display: block;
-
     width: 100%;
-
     padding: 11px;
-
-    box-sizing: border-box;
-
-    color: #18335d;
-
-    text-decoration: none;
-
-    font-size: 15px;
-
+    border: none;
     border-radius: 8px;
+    background: transparent;
+    color: #18335d;
+    text-align: left;
+    text-decoration: none;
+    font-size: 15px;
+    cursor: pointer;
 }
-
-
-/* Dashboard hover */
 
 .dropdown a:hover {
     background-color: #f3effb;
 }
 
-
-/* Logout button */
-
 .dropdown button {
     display: block;
-
     width: 100%;
-
     padding: 11px;
-
     margin: 0;
-
     border: none;
-
-    background-color: transparent;
-
-    color: #d9534f;
-
-    text-align: left;
-
-    font-size: 15px;
-
     border-radius: 8px;
-
+    background: transparent;
+    color: #d9534f;
+    text-align: left;
+    font-size: 15px;
     cursor: pointer;
 }
 
-
-/* Logout hover */
-
-.dropdown button:hover {
-    background-color: #fff0f0;
-}
-#deleteAccountBtn {
-    width: 100%;
-
-    padding: 11px;
-
-    margin: 0;
-
-    border: none;
-
-    background-color: transparent;
-
-    color: #d9534f;
-
-    text-align: left;
-
-    font-size: 15px;
-
-    border-radius: 8px;
-
-    cursor: pointer;
-}
-
+.dropdown button:hover,
 #deleteAccountBtn:hover {
     background-color: #fff0f0;
 }
+
+/* =========================================
+   MAIN SECTION + FULL BACKGROUND IMAGE
+========================================= */
+
 .section1 {
-    height: 800px;
-    width: 100%;
     position: relative;
+    isolation: isolate;
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    height: auto;
+    padding: 60px 4%;
+    display: grid;
+    grid-template-columns: minmax(0, 430px) minmax(0, 550px);
+    justify-content: center;
+    align-items: center;
+    gap: clamp(24px, 4vw, 60px);
     overflow: hidden;
 }
 
-.section1 img {
+.section1 > img {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
     width: 100%;
-    height: 800px;
+    height: 100%;
     object-fit: cover;
+    object-position: center;
+    pointer-events: none;
 }
+
+/* =========================================
+   LEFT INFORMATION CARD
+========================================= */
 
 .form {
-    z-index: 2;
-    height: 300px;
-    width: 350px;
-    background-color: rgba(255, 255, 255, 0.3);
-
-    position: absolute;
-    top: 40%;
-    left: 400px;
-
-    transform: translate(-50%, -50%);
-    backdrop-filter: blur(3px);
-    border-radius: 20px;
-    padding: 30px;
-    box-sizing: border-box;
-}
-.circle{
-    height:130px;
-    width:130px;
-    top: -50px;
-    left: 125px;
-    position: absolute;
-    border-radius:50%;
-    background-color:white;
-}
-.circle1{
-    height:110px;
-    width:110px;
-    top: 10px;
-    left: 10px;
-    position: absolute;
-    border-radius:50%;
-    background-color:rgb(184, 224, 194);
-}
-.circle1 h2{
-    position: absolute;
-    top: 15px;
-    left:28px;
-    color:#18335d;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 70px;
-    
-}
-.form h1{
-    text-align: center;
-    color: black;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 35px;
-    margin-top: 60px;
-    margin-bottom: 30px;
-}
-.points{
-    display: flex;
-    flex-direction: column;
-
-    margin-bottom: 20px;
-}
-.one,.two,.three{
-    display: flex;
-    gap:20px;
-
-}
-.one p, 
-.two p,
-.three p{
-    color: black;
-    font-size: 20px;
-    line-height: 30px;
-}
-.one i,
-.two i,
-.three i{
-    color:#7568d0;
-    font-size: 20px;
-    line-height: 30px;
-}
-.info {
-    
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-left:560px;
-    margin-top: -370px;
-    border-radius: 20px;
-    height: 650px;
-    width:500px;
-    background-color: white;
-}
-.info h1{
-    color:#18335d;
-    margin-top: 60px;
-}
-.input-box {
-    padding-top:15px;
-    padding-left:50px;
     position: relative;
     width: 100%;
+    max-width: 430px;
+    min-width: 0;
+    height: auto;
+    min-height: 320px;
+    margin: 25px 0 0;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.42);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    z-index: 1;
+}
+
+.circle {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 130px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.circle1 {
+    position: relative;
+    width: 110px;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgb(184, 224, 194);
+}
+
+.circle1 h2 {
+    position: static;
+    color: #18335d;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 70px;
+    font-weight: normal;
+}
+
+.form h1 {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    color: black;
+    text-align: center;
+    font-size: 35px;
+}
+
+.points {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.one,
+.two,
+.three {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.one p,
+.two p,
+.three p {
+    color: black;
+    font-size: 18px;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+.one i,
+.two i,
+.three i {
+    color: #7568d0;
+    font-size: 19px;
+    line-height: 1.5;
+    flex-shrink: 0;
+}
+
+/* =========================================
+   RIGHT SIGN UP FORM CARD
+========================================= */
+
+.info {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    width: 100%;
+    max-width: 550px;
+    min-width: 0;
+    height: auto;
+    min-height: 0;
+    margin: 0;
+    padding: 35px 40px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.info h1 {
+    width: 100%;
+    margin: 15px 0 25px;
+    color: #18335d;
+    text-align: center;
+    font-size: 32px;
+    line-height: 1.2;
+    overflow-wrap: anywhere;
+}
+
+/* =========================================
+   INPUT FIELDS
+========================================= */
+
+.input-box {
+    position: relative;
+    width: 100%;
+    min-width: 0;
+    padding-top: 8px;
+    margin-bottom: 10px;
 }
 
 .input-box i {
     position: absolute;
-    left: 65px;
-    top: 35px;
+    top: 33px;
+    left: 15px;
     transform: translateY(-50%);
     color: #a88bd8;
     font-size: 17px;
+    pointer-events: none;
+}
+
+.input-box input,
+.input-box select {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    height: 50px;
+    border: 1px solid #b99bdd;
+    border-radius: 20px;
+    background-color: #f3effb;
+    color: #333;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    outline: none;
 }
 
 .input-box input {
-    width: 400px;
-    height: 50px;
-
-    box-sizing: border-box;
-
-    padding-left: 50px;
-    padding-right: 12px;
-
-    border: 1px solid #b99bdd;
-    border-radius: 20px;
-
-    background-color: #f3effb;
-
-    font-size: 14px;
-    color: #333;
-
-    outline: none;
+    padding: 0 12px 0 42px;
 }
 
 .input-box input::placeholder {
     color: #333;
-    font-size: 17px;
-}
-
-.input-box input:focus {
-    border: 1px solid #9b7bd0;
-    box-shadow: 0 0 5px rgba(155, 123, 208, 0.2);
+    font-size: 14px;
+    opacity: 1;
 }
 
 .input-box select {
-    width: 400px;
-    height: 50px;
-
-    box-sizing: border-box;
-
-    padding-left: 50px;
-    padding-right: 40px;
-
-    border: 1px solid #b99bdd;
-    border-radius: 20px;
-
-    background-color: #f3effb;
-
-    font-size: 17px;
-    color: #333;
-
-    outline: none;
-
+    padding: 0 35px 0 42px;
     cursor: pointer;
-}
-
-.input-box select:focus {
-    border: 1px solid #9b7bd0;
-    box-shadow: 0 0 5px rgba(155, 123, 208, 0.2);
 }
 
 .input-box select option {
     color: #333;
     background-color: white;
 }
-#error-message {
-    color: #d9534f;
-    font-size: 15px;
-    text-align: center;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-.signup-btn {
-    width: 400px;
-    height: 50px;
-    margin-left: 50px;
-    margin-top: 25px;
 
+.input-box input:focus,
+.input-box select:focus {
+    border-color: #9b7bd0;
+    box-shadow: 0 0 5px rgba(155, 123, 208, 0.2);
+}
+
+/* =========================================
+   ERROR MESSAGE
+========================================= */
+
+#error-message {
+    margin: 8px 0;
+    color: #d9534f;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.4;
+    overflow-wrap: anywhere;
+}
+
+/* =========================================
+   SIGN UP BUTTON
+========================================= */
+
+.info .signup-btn {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-height: 50px;
+    margin: 15px 0 0;
+    padding: 10px 15px;
     border: none;
     border-radius: 20px;
-
-    background: linear-gradient(
-        90deg,
-        #a98be2,
-        #8e6bd1
-    );
-
+    background: linear-gradient(90deg, #a98be2, #8e6bd1);
     color: white;
-    font-size: 17px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
     font-weight: bold;
-
     cursor: pointer;
 }
-.info p{
-    text-align: center;
-    /* padding-left: 57px; */
-    margin-top: 20px;
-    font-size: 20px;
+
+.info .signup-btn:hover {
+    filter: brightness(0.97);
 }
-.info a{
+
+.info p {
+    width: 100%;
+    margin: 12px 0 0;
+    text-align: center;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.info a {
+    color: #7568d0;
     text-decoration: none;
-    color:#7568d0;
+}
+
+/* =========================================
+   TABLET + SMALL LAPTOP
+   769px–1100px
+   Keep both cards wide and side by side
+========================================= */
+
+@media screen and (min-width: 769px) and (max-width: 1100px) {
+    .section1 {
+        min-height: calc(100vh - 80px);
+        padding: 45px 24px;
+        grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+        align-items: center;
+        gap: 24px;
+    }
+
+    .form {
+        width: 100%;
+        max-width: none;
+        min-height: 320px;
+        margin-top: 25px;
+        padding: 25px 22px;
+    }
+
+    .circle {
+        width: 100px;
+        height: 100px;
+        top: -42px;
+    }
+
+    .circle1 {
+        width: 82px;
+        height: 82px;
+    }
+
+    .circle1 h2 {
+        font-size: 52px;
+    }
+
+    .form h1 {
+        margin-top: 45px;
+        margin-bottom: 22px;
+        font-size: 28px;
+    }
+
+    .one,
+    .two,
+    .three {
+        gap: 10px;
+    }
+
+    .one p,
+    .two p,
+    .three p {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .info {
+        width: 100%;
+        max-width: none;
+        padding: 28px 25px;
+    }
+
+    .info h1 {
+        margin: 12px 0 20px;
+        font-size: 28px;
+    }
+
+    .input-box input,
+    .input-box select {
+        height: 48px;
+        font-size: 14px;
+    }
+
+    .info .signup-btn {
+        min-height: 48px;
+    }
+}
+
+/* =========================================
+   MOBILE + NARROW TABLET
+   768px and below
+========================================= */
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        min-height: 65px;
+        padding: 14px 12px;
+        gap: 12px;
+        justify-content: center;
+    }
+
+    .navbar > a {
+        font-size: 13px;
+    }
+
+    .nav-user {
+        position: relative;
+        top: auto;
+        right: auto;
+    }
+
+    .nav-user .btn {
+        min-width: 75px;
+        height: 35px;
+        padding: 0 8px;
+        font-size: 13px;
+    }
+
+    .section1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 45px;
+        min-height: calc(100vh - 65px);
+        padding: 55px 20px 35px;
+    }
+
+    .section1 > img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center top;
+        z-index: -1;
+    }
+
+    .form {
+        width: 100%;
+        max-width: 550px;
+        min-height: 290px;
+        height: auto;
+        margin: 0;
+        padding: 25px 24px;
+    }
+
+    .circle {
+        top: -40px;
+        width: 90px;
+        height: 90px;
+    }
+
+    .circle1 {
+        width: 72px;
+        height: 72px;
+    }
+
+    .circle1 h2 {
+        font-size: 46px;
+    }
+
+    .form h1 {
+        margin-top: 45px;
+        margin-bottom: 22px;
+        font-size: 28px;
+    }
+
+    .one p,
+    .two p,
+    .three p {
+        font-size: 15px;
+    }
+
+    .info {
+        width: 100%;
+        max-width: 550px;
+        min-height: 0;
+        margin: 0;
+        padding: 28px 25px;
+    }
+
+    .info h1 {
+        margin: 12px 0 22px;
+        font-size: 27px;
+    }
+
+    .input-box {
+        margin-bottom: 10px;
+    }
+
+    .input-box i {
+        top: 33px;
+        left: 14px;
+    }
+
+    .input-box input,
+    .input-box select {
+        height: 47px;
+        font-size: 14px;
+    }
+
+    .info .signup-btn {
+        min-height: 47px;
+        margin-top: 15px;
+    }
+
+    .info p {
+        font-size: 15px;
+    }
+}
+
+/* =========================================
+   SMALL MOBILE
+   480px and below
+========================================= */
+
+@media screen and (max-width: 480px) {
+    .navbar {
+        gap: 9px;
+        padding: 12px 8px;
+    }
+
+    .navbar > a {
+        font-size: 11px;
+    }
+
+    .nav-user .btn {
+        min-width: 62px;
+        height: 32px;
+        padding: 0 6px;
+        font-size: 11px;
+    }
+
+    .section1 {
+        gap: 35px;
+        padding: 48px 12px 25px;
+    }
+
+    .form {
+        min-height: 270px;
+        padding: 20px 16px;
+        border-radius: 16px;
+    }
+
+    .circle {
+        top: -36px;
+        width: 78px;
+        height: 78px;
+    }
+
+    .circle1 {
+        width: 62px;
+        height: 62px;
+    }
+
+    .circle1 h2 {
+        font-size: 40px;
+    }
+
+    .form h1 {
+        margin-top: 40px;
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+
+    .points {
+        gap: 10px;
+    }
+
+    .one,
+    .two,
+    .three {
+        gap: 8px;
+    }
+
+    .one p,
+    .two p,
+    .three p {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    .one i,
+    .two i,
+    .three i {
+        font-size: 15px;
+    }
+
+    .info {
+        padding: 22px 15px;
+        border-radius: 16px;
+    }
+
+    .info h1 {
+        font-size: 23px;
+        margin: 10px 0 18px;
+    }
+
+    .input-box {
+        padding-top: 7px;
+        margin-bottom: 9px;
+    }
+
+    .input-box i {
+        top: 31px;
+        font-size: 14px;
+    }
+
+    .input-box input,
+    .input-box select {
+        height: 44px;
+        font-size: 13px;
+    }
+
+    .input-box input::placeholder {
+        font-size: 12px;
+    }
+
+    .info .signup-btn {
+        min-height: 44px;
+        font-size: 14px;
+    }
+
+    .info p {
+        font-size: 14px;
+    }
+}
+
+/* =========================================
+   EXTRA SMALL MOBILE
+   360px and below
+========================================= */
+
+@media screen and (max-width: 360px) {
+    .navbar {
+        gap: 6px;
+        padding: 10px 5px;
+    }
+
+    .navbar > a {
+        font-size: 10px;
+    }
+
+    .nav-user .btn {
+        min-width: 55px;
+        font-size: 10px;
+    }
+
+    .section1 {
+        padding-right: 9px;
+        padding-left: 9px;
+        gap: 30px;
+    }
+
+    .form {
+        padding: 18px 12px;
+    }
+
+    .form h1 {
+        font-size: 22px;
+    }
+
+    .one p,
+    .two p,
+    .three p {
+        font-size: 12px;
+    }
+
+    .info {
+        padding: 18px 12px;
+    }
+
+    .info h1 {
+        font-size: 21px;
+    }
+
+    .input-box input,
+    .input-box select {
+        font-size: 12px;
+        padding-left: 38px;
+    }
+
+    .input-box i {
+        left: 12px;
+    }
 }
